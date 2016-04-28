@@ -103,14 +103,14 @@ function Menu(){
 	                   		</div>
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
-	                    			<label class="sr-only" for="form-dir1">Direccion Primaria...</label>
-	                    			<input type="email" name="form-dir1" placeholder="Correo..." class="form-username form-control" id="form-dir1">
+	                    			<label class="sr-only" for="form-dir1">Direccion Primaria</label>
+	                    			<input type="email" name="form-dir1" placeholder="Direccion Primaria..." class="form-username form-control" id="form-dir1">
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-dir2">Direccion Secundaria...</label>
-	                    			<input type="email" name="form-dir2" placeholder="Correo..." class="form-username form-control" id="form-dir2">
+	                    			<input type="email" name="form-dir2" placeholder="Direccion Secundaria..." class="form-username form-control" id="form-dir2">
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-12">
