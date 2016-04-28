@@ -71,7 +71,7 @@ function Menu(){
 	                <form role="form" action="login.php" method="post" class="login-form">
 	                   	<div class="form-group">
 	                    	<label class="sr-only" for="form-email">Correo</label>
-	                    	<input type="email" name="form-email" placeholder="Correo..." class="form-correo form-control" id="form-correo">
+	                    	<input type="email" name="form-correo" placeholder="Correo..." class="form-correo form-control" id="form-correo">
 	                    </div>
 	                    <div class="form-group">
 	                        <label class="sr-only" for="form-password">Password</label>
@@ -104,13 +104,13 @@ function Menu(){
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-dir1">Direccion Primaria</label>
-	                    			<input type="email" name="form-dir1" placeholder="Direccion Primaria..." class="form-username form-control" id="form-dir1">
+	                    			<input type="text" name="form-dir1" placeholder="Direccion Primaria..." class="form-username form-control" id="form-dir1">
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-dir2">Direccion Secundaria...</label>
-	                    			<input type="email" name="form-dir2" placeholder="Direccion Secundaria..." class="form-username form-control" id="form-dir2">
+	                    			<input type="text" name="form-dir2" placeholder="Direccion Secundaria..." class="form-username form-control" id="form-dir2">
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-12">
@@ -220,19 +220,19 @@ function LogOut(){
 	header("Location: index.php");
 }
 
-	function conexion() {	
-		$server = "localhost";
-		$username = "root";
-		$password = "";
-		$database= "venta";
+function conexion(){	
+	$server = "localhost";
+	$username = "root";
+	$password = "";
+	$database= "venta";
 
+	$conn = new mysqli($server, $username, $password,$database);
 
-		$conn = new mysqli($server, $username, $password,$database);
-
-		if ($conn->connect_error) {
+	if ($conn->connect_error) 
+		{
     		die("Falla: " . $conn->connect_error);
 		}
-	}
+}
 
 
 ?>
