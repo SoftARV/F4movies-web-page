@@ -19,6 +19,7 @@ function result()
     {
       document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
       document.getElementById("livesearch").style.border="1px solid";
+      document.getElementById("livesearch").style.color="white";
     }
   }
   xmlhttp.open("GET","livesearch.php?str="+str,true);

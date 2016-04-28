@@ -1,6 +1,6 @@
 <?php 
 		include("modules/Modules.php");
-		include("modules/Peliculas.php");
+		//include("modules/Peliculas.php");
 		session_start();
 ?>
 <!DOCTYPE html>
@@ -19,28 +19,36 @@
 	<?php 
 		echo Menu();
 	?>
+
 	<div class="row">
-		  <div class="col-lg-9 col-lg-offset-2">
-		    <div class="input-group">
-		      <div class="input-group-btn">
-		        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-		        <ul class="dropdown-menu">
-		          <li><a href="#">Action</a></li>
-		          <li><a href="#">Another action</a></li>
-		          <li><a href="#">Something else here</a></li>
-		          <li role="separator" class="divider"></li>
-		          <li><a href="#">Separated link</a></li>
-		        </ul>
-		      </div><!-- /btn-group -->
-		      <input type="text" class="form-control" aria-label="..." id="search">
-		      <div id="livesearch"></div>
-		    	<span class="input-group-btn"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon glyphicon-th-list" aria-hidden="true"></span></button></span>
-	      		<span class="input-group-btn"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon glyphicon-th-large" aria-hidden="true"></span></button></span>
-		    </div><!-- /input-group -->
-		  </div><!-- /.col-lg-6 -->
-		</div><!-- /.row -->
-	<div class="row">
-			
+		<div class="col-lg-9 col-lg-offset-2">
+			<div class="input-group">
+				<div class="input-group-btn">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buscar<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Todos</a></li>
+						<li><a href="#">Genero</a></li>
+						<li><a href="#">Otros</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</div><!-- /btn-group -->
+				<input type="text" class="form-control" aria-label="..." id="search">
+				<div id="livesearch"></div>
+				<div class="input-group-btn">
+					<button type="button" class="btn btn-default" aria-label="Left Align">
+						<span class="glyphicon glyphicon glyphicon-th" aria-hidden="true"></span>
+					</button>
+
+					<button type="button" class="btn btn-default" aria-label="Left Align">
+						<span class="glyphicon glyphicon glyphicon-th-list" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div><!-- /input-group -->
+		</div><!-- /.col-lg-6 -->		
+	</div>
+
+	<div class="row">			
 		<div class="col-lg-2">
 			<div>
 				<div class="list-group">
@@ -56,80 +64,14 @@
 		<div class="col-lg-9" style="color: white;">
 			<div class="media">
 	  			<div class="media-left media-top"><a href="#"><img class="media-object" src="..." alt="..."></a></div>
-	  			<div class="media-body">
-	    		<h3 class="media-heading">Middle aligned media</h3>
-	    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	  			</div>
-			</div>
-			<div class="media">
-	  			<div class="media-left media-top"><a href="#"><img class="media-object" src="..." alt="..."></a></div>
-	  			<div class="media-body">
-	    		<h3 class="media-heading">Middle aligned media</h3>
-	    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	  			</div>
-			</div>
-			<div class="media">
-	  			<div class="media-left media-top"><a href="#"><img class="media-object" src="..." alt="..."></a></div>
-	  			<div class="media-body">
-	    		<h3 class="media-heading">Middle aligned media</h3>
-	    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	  			</div>
+		  			<div class="media-body">
+		    		<h3 class="media-heading">Middle aligned media</h3>
+		    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		  			</div>
 			</div>
 
 			<div class="row">
 		  		<div class="col-sm-6 col-md-3 col-lg-4">
-		    		<div class="thumbnail">
-		      		<img src="..." alt="...">
-		      			<div class="caption">
-		        		<h3>Thumbnail label</h3>
-		      			</div>
-		    		</div>
-		  		</div>
-		  		<div class="col-sm-6 col-md-3 col-lg-4">
-		    		<div class="thumbnail">
-		      		<img src="..." alt="...">
-		      			<div class="caption">
-		        		<h3>Thumbnail label</h3>
-		      			</div>
-		    		</div>
-		  		</div>
-		  		<div class="col-sm-6 col-md-3 col-lg-4">
-		    		<div class="thumbnail">
-		      		<img src="..." alt="...">
-		      			<div class="caption">
-		        		<h3>Thumbnail label</h3>
-		      			</div>
-		    		</div>
-		  		</div>
-			</div>
-			<div class="row">
-		  		<div class="col-sm-6 col-md-3 col-lg-4">
-		    		<div class="thumbnail">
-		      		<img src="..." alt="...">
-		      			<div class="caption">
-		        		<h3>Thumbnail label</h3>
-		      			</div>
-		    		</div>
-		  		</div>
-		  		<div class="col-sm-6 col-md-3 col-lg-4">
-		    		<div class="thumbnail">
-		      		<img src="..." alt="...">
-		      			<div class="caption">
-		        		<h3>Thumbnail label</h3>
-		      			</div>
-		    		</div>
-		  		</div>
-		  		<div class="col-sm-6 col-md-3 col-lg-4">
-		    		<div class="thumbnail">
-		      		<img src="..." alt="...">
-		      			<div class="caption">
-		        		<h3>Thumbnail label</h3>
-		      			</div>
-		    		</div>
-		  		</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-3 col-lg-4">
 		    		<div class="thumbnail">
 		      		<img src="..." alt="...">
 		      			<div class="caption">
