@@ -32,7 +32,8 @@
 		          <li><a href="#">Separated link</a></li>
 		        </ul>
 		      </div><!-- /btn-group -->
-		      <input type="text" class="form-control" aria-label="...">
+		      <input type="text" class="form-control" aria-label="..." id="search">
+		      <div id="livesearch"></div>
 		    	<span class="input-group-btn"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon glyphicon-th-list" aria-hidden="true"></span></button></span>
 	      		<span class="input-group-btn"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon glyphicon-th-large" aria-hidden="true"></span></button></span>
 		    </div><!-- /input-group -->
@@ -163,5 +164,6 @@
 	?>
 </footer>
 <?php echo imports(); ?>
+<script type="text/javascript" src="livesearch.js"></script>
 </body>
 </html>
