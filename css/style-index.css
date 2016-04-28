@@ -1,0 +1,33 @@
+.carousel .carousel-inner .item img {
+	height: 400px;
+	margin: 0 auto;
+}
+
+.movie-list {
+	margin-top: 50px;
+}
+
+.description {
+	height: 300px;
+	color: white;
+}
+
+.logo {
+	margin-top: 40px;
+	width: 300px;
+}
+
+.description2 {
+	background: #1E5093;
+	height: 250px;
+	color: white;
+}
+
+#title {
+	margin-top: 60px;
+	
+}
+
+#text {
+	
+}
