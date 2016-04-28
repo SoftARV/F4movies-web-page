@@ -31,10 +31,10 @@ function Menu(){
 	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	            <ul class="nav navbar-nav">
 	                <li>
-	                    <a href="#">Inicio</a>
+	                    <a href="index.php">Inicio</a>
 	                </li>
 	                <li>
-	                    <a href="#">Peliculas</a>
+	                    <a href="peliculas.php">Peliculas</a>
 	                </li>
 	                <li>
 	                    <a href="#">Contactanos</a>
