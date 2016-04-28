@@ -1,7 +1,10 @@
+.input-group{
+	padding: 5px;
+}
 input {
     background-color: lightblue;
     background-color: white;
-    background-image: url('searchicon.png');
+    background-image: url('glyphicon glyphicon-search');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding-left: 40px;
