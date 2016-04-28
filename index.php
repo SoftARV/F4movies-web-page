@@ -41,8 +41,14 @@
 
 	                </form>
 
-	                <form role="form" action="" method="post" class="register-form hidden-item">
+	                <form role="form" action="registro.php" method="post" class="register-form hidden-item">
 	                   	<div class="row">
+	                   		<div class="col-sm-12">
+	                   			<div class="form-group">
+	                    			<label class="sr-only" for="form-cedula">Cedula</label>
+	                    			<input type="number" name="form-cedula" placeholder="Cedula..." class="form-username form-control" id="form-cedula">
+	                    		</div>
+	                    	</div>
 	                   		<div class="col-sm-6">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-name">Nombre</label>
@@ -57,8 +63,26 @@
 	                   		</div>
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
-	                    			<label class="sr-only" for="form-email">Correo</label>
-	                    			<input type="email" name="form-email" placeholder="Correo..." class="form-username form-control" id="form-correo">
+	                    			<label class="sr-only" for="form-dir1">Direccion Primaria...</label>
+	                    			<input type="email" name="form-dir1" placeholder="Correo..." class="form-username form-control" id="form-dir1">
+	                    		</div>
+	                    	</div>
+	                    	<div class="col-sm-12">
+	                   			<div class="form-group">
+	                    			<label class="sr-only" for="form-dir2">Direccion Secundaria...</label>
+	                    			<input type="email" name="form-dir2" placeholder="Correo..." class="form-username form-control" id="form-dir2">
+	                    		</div>
+	                    	</div>
+	                    	<div class="col-sm-12">
+	                   			<div class="form-group">
+	                    			<label class="sr-only" for="form-telefono">Telefono</label>
+	                    			<input type="number" name="form-telefono" placeholder="Numero de Telefono..." class="form-username form-control" id="form-telefono">
+	                    		</div>
+	                    	</div>
+	                   		<div class="col-sm-12">
+	                   			<div class="form-group">
+	                    			<label class="sr-only" for="form-correo">Correo</label>
+	                    			<input type="email" name="form-correo" placeholder="Correo..." class="form-username form-control" id="form-correo">
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-12">

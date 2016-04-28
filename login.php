@@ -1,8 +1,8 @@
 <?php
 include("modules/modules.php");
 
-$correo = $_POST["correo"];
-$pass = $_POST["pass"];
+$correo = $_POST["form-correo"];
+$pass = $_POST["form-password"];
 
 $pass=md5($pass);
 

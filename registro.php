@@ -1,15 +1,15 @@
 <?php
 include("modules/modules.php");
 
-$cedula = $_POST["cedula"];
-$nombre = $_POST["nombre"];
-$apellido = $_POST["apellido"];
-$correo = $_POST["correo"];
-$telefono = $_POST["telefono"];
-$direccion1 = $_POST["direccion1"];
-$direccion2 = $_POST["direccion2"];
-$nick = $_POST["nick"];
-$pass = $_POST["pass"];
+$cedula = $_POST["form-cedula"];
+$nombre = $_POST["form-name"];
+$apellido = $_POST["form-lastname"];
+$correo = $_POST["form-correo"];
+$telefono = $_POST["form-telefono"];
+$direccion1 = $_POST["form-dir1"];
+$direccion2 = $_POST["form-dir2"];
+$nick = $_POST["form-username"];
+$pass = $_POST["form-password"];
 
 $direccion=$direccion1+$direccion2;
 $pass=md5($pass);
