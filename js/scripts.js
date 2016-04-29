@@ -82,7 +82,7 @@ jQuery(document).ready(function() {
         $('.div2').addClass('');
         $('.div2').removeClass('');
         $('.div1').addClass('');
-        $('.div1').removeClass('');
+        $('.div1').removeClass('col-lg-4');
         $('.poster').removeClass('media-object');
 
     });
@@ -97,7 +97,7 @@ jQuery(document).ready(function() {
         $('.div3').removeClass('col-sm-6 col-md-3 col-lg-4');
         $('.div2').addClass('');
         $('.div2').removeClass('');
-        $('.div1').addClass('');
+        $('.div1').addClass('col-lg-4');
         $('.div1').removeClass('');
         $('.poster').addClass('media-object');
     });
