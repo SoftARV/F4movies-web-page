@@ -63,7 +63,8 @@
 		
 		<div class="col-lg-9" style="color: white;">
 			
-			<div class="media div1">
+			<!-- aqui esta le pones un col como lo quieres y ya -->
+			<div class="col-md-4 media div1">
 				<div id="movies" class="div2" >
 					<div class="div03">
 						<div class="poster div3"><a href=""><img class="poster" src="images/Default.jpg" alt="Poster"></a></div>
@@ -76,7 +77,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="media div1">
+			<div class="col-md-4  media div1">
 				<div id="movies" class="div2" >
 					<div class="div03">
 						<div class="poster div3"><a href=""><img class="poster" src="images/Default.jpg" alt="Poster"></a></div>
@@ -89,7 +90,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="media div1">
+			<div class="col-md-4 media div1">
 				<div id="movies" class="div2" >
 					<div class="div03">
 						<div class="poster div3"><a href=""><img class="poster" src="images/Default.jpg" alt="Poster"></a></div>
