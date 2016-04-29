@@ -4,15 +4,15 @@ session_start();
 include("Modules/Modules.php");
 
 $correo = $_POST["form-correo"];
-$pass = $_POST["form-password"];
+$pass   = $_POST["form-password"];
 
 $pass=md5($pass);
 
 //echo conexion();
-$server = "localhost";
+$server   = "localhost";
 $username = "root";
 $password = "";
-$database= "venta";
+$database = "venta";
 
 $conn = new mysqli($server, $username, $password,$database);
 
