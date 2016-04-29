@@ -72,33 +72,18 @@ jQuery(document).ready(function() {
     });
 
     $('#list-view').click(function(){
-        $('#movies').addClass('row');
-        $('.div5').removeClass('media-body');
-        $('.div5').addClass('caption');
-        $('.div4').addClass('row');
-        $('.div4').removeClass('');
-        $('.div3').addClass('col-sm-6 col-md-3 col-lg-4');
-        $('.div03').removeClass('poster media-left media-top');
-        $('.div2').addClass('');
-        $('.div2').removeClass('');
-        $('.div1').addClass('');
-        $('.div1').removeClass('');
-        $('.poster').removeClass('media-object');
-
-    });
+        $('.movie').removeClass().addClass('movie col-md-12', function() {
+            $('.poster').removeClass().addClass('poster col-md-6', function() {
+                $('.description').removeClass().addClass('description col-md-6')
+            })
+        })
+    })
     
     $('#grid-view').click(function(){
-        $('#movies').removeClass('row');
-        $('.div5').addClass('media-body');
-        $('.div5').removeClass('caption');
-        $('.div4').addClass('');
-        $('.div4').removeClass('row');
-        $('.div03').addClass('poster media-left media-top');
-        $('.div3').removeClass('col-sm-6 col-md-3 col-lg-4');
-        $('.div2').addClass('');
-        $('.div2').removeClass('');
-        $('.div1').addClass('');
-        $('.div1').removeClass('');
-        $('.poster').addClass('media-object');
-    });
-});
+        $('.movie').removeClass().addClass('col-md-4', function() {
+            $('.poster').removeClass.addClass('poster',function() {
+                $('.description').removeClass().addClass('description')
+            })
+        })
+    })
+})
