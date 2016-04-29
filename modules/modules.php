@@ -10,7 +10,7 @@ function Head($Titulo){
 }	
 
 function Menu(){
-	if (!isset($_SESSION["usuario"]))
+	if (!isset($_SESSION["usuario"]))	
 	{
 	return '<!-- Navigation -->
 	<nav class="navbar navbar-inverted navbar-fixed-top" role="navigation">
@@ -78,6 +78,7 @@ function Menu(){
 	                        <input type="password" name="form-password" placeholder="Contraseña..." class="form-password form-control" id="form-password">
 	                    </div>
 	                    <button type="submit" class="btn login">Iniciar Sesion</button>
+	                    
 
 	                </form>
 
@@ -185,7 +186,9 @@ function Menu(){
 		                <li><a href="#">Contactanos</a></li>
 		            </ul>
 		            <ul class="nav navbar-nav navbar-right">
-		            	<button type="button" class="btn btn-inverted navbar-btn launch-modal" data-modal-id="modal-login">Iniciar Sesion</button>
+		            	<li><a href="#">'.$_SESSION["usuario"].'</a></li>
+		            	<li><a href="logout.php">Cerrar sesion</a></li>
+		            	
 		            </ul>
 		        </div>
 		    </div>
@@ -214,12 +217,18 @@ function imports() {
     <script type="text/javascript" src="js/scripts.js"></script>';
 }
 
-function LogOut(){
-	session_unset();
-	session_destroy();
-	header("Location: index.php");
+function login(){
+	if (isset($_GET["loginFailed"]))
+	{
+		echo'
+		<div class="alert alert-warning">
+  		<a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  		<strong>Error</strong> Login invalido.
+		</div>';
+	}
+	
 }
-
+	
 function conexion(){	
 	$server = "localhost";
 	$username = "root";

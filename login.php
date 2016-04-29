@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include("Modules/Modules.php");
 
 $correo = $_POST["form-correo"];
@@ -27,13 +29,12 @@ if ($result->num_rows > 0)
         	if ($row["pass"]=$pass) 
         	{
         		$_SESSION["usuario"] = $correo;
-                
-        		echo "Acceso exitoso"; 
-        		// Redirigir o modificar 
+        		header("Location: index.php"); 
         	}
         	else
         	{
-        		echo "Clave invalida";
+        		die(header("location:index.php?loginFailed=true"));
+                
         	}	
         	
         }
@@ -41,7 +42,7 @@ if ($result->num_rows > 0)
 }
 else
 
-echo "Correo invalido";
+die(header("location:index.php?loginFailed=true"));
 
 $conn->close();
 

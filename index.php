@@ -8,8 +8,10 @@
 	<?php echo Head("F4movies"); ?>
 </head>
 <body>
-	<?php echo Menu(); ?>
-	
+	<?php 
+	echo Menu(); 
+	echo login();
+	?>	
 	<article>
 		<div id="carousel" class="carousel slide" data-ride="carousel">
 		  	<!-- Indicators -->
