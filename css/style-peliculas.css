@@ -6,3 +6,10 @@ input {
     background-repeat: no-repeat;
     padding-left: 40px;
 }
+.input-group{
+	padding: 5px;
+}
+.poster{
+	height: 240px;
+	width: 180px;
+}

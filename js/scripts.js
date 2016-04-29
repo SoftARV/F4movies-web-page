@@ -70,5 +70,35 @@ jQuery(document).ready(function() {
             $('.register-btn').fadeToggle();
         });
     });
+
+    $('#list-view').click(function(){
+        $('#movies').addClass('row');
+        $('.div5').removeClass('media-body');
+        $('.div5').addClass('caption');
+        $('.div4').addClass('row');
+        $('.div4').removeClass('');
+        $('.div3').addClass('col-sm-6 col-md-3 col-lg-4');
+        $('.div03').removeClass('poster media-left media-top');
+        $('.div2').addClass('');
+        $('.div2').removeClass('');
+        $('.div1').addClass('');
+        $('.div1').removeClass('');
+        $('.poster').removeClass('media-object');
+
+    });
     
+    $('#grid-view').click(function(){
+        $('#movies').removeClass('row');
+        $('.div5').addClass('media-body');
+        $('.div5').removeClass('caption');
+        $('.div4').addClass('');
+        $('.div4').removeClass('row');
+        $('.div03').addClass('poster media-left media-top');
+        $('.div3').removeClass('col-sm-6 col-md-3 col-lg-4');
+        $('.div2').addClass('');
+        $('.div2').removeClass('');
+        $('.div1').addClass('');
+        $('.div1').removeClass('');
+        $('.poster').addClass('media-object');
+    });
 });
