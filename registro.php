@@ -17,10 +17,10 @@ $direccion=$direccion1+$direccion2;
 $pass=md5($pass);
 
 //echo conexion();
-$server = "localhost";
+$server   = "localhost";
 $username = "root";
 $password = "";
-$database= "venta";
+$database = "venta";
 
 $conn = new mysqli($server, $username, $password,$database);
 

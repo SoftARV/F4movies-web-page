@@ -76,6 +76,32 @@
 					</div>
 				</div>
 			</div>
+			<div class="media div1">
+				<div id="movies" class="div2" >
+					<div class="div03">
+						<div class="poster div3"><a href=""><img class="poster" src="images/Default.jpg" alt="Poster"></a></div>
+						<div class="div4">
+							<div  class="div5" >
+								<h3 class="media-heading movie-title">Movie Title</h3>
+								<p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquam, illum fugit magnam ea. Odio quia esse, tenetur excepturi quisquam amet repellendus adipisci cumque facilis, voluptas ratione, omnis perferendis tempore.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="media div1">
+				<div id="movies" class="div2" >
+					<div class="div03">
+						<div class="poster div3"><a href=""><img class="poster" src="images/Default.jpg" alt="Poster"></a></div>
+						<div class="div4">
+							<div  class="div5" >
+								<h3 class="media-heading movie-title">Movie Title</h3>
+								<p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquam, illum fugit magnam ea. Odio quia esse, tenetur excepturi quisquam amet repellendus adipisci cumque facilis, voluptas ratione, omnis perferendis tempore.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 	</div>

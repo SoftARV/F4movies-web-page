@@ -1,9 +1,7 @@
 <?php 
-	function gridview(){
+	function movies(){
+		
 
 	}
-	
-	function listview(){
 
-	}
 ?>
