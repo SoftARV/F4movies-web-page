@@ -48,7 +48,7 @@
     border-color: #B20E01;
 }
 
-input[class='login-input'],
+input.login-input,
 textarea, 
 textarea.form-control {
 	height: 50px;
@@ -74,7 +74,7 @@ textarea.form-control {
 	line-height: 30px;
 }
 
-input[class='login-input']
+input.login-input,
 textarea:focus, 
 textarea.form-control:focus {
 	outline: 0;
@@ -83,11 +83,11 @@ textarea.form-control:focus {
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
 
-input[class='login-input']:-moz-placeholder { color: #888; }
+input.login-input:-moz-placeholder { color: #888; }
 
-input[class='login-input']:-ms-input-placeholder { color: #888; }
+input.login-input:-ms-input-placeholder { color: #888; }
 
-input[class='login-input']::-webkit-input-placeholder { color: #888; }
+input.login-input::-webkit-input-placeholder { color: #888; }
 
 
 
