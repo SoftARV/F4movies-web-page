@@ -1,21 +1,27 @@
 <?php
-include("modules/Modules.php");
+session_start();
 
-$correo = $_POST["correo"];
-$pass = $_POST["pass"];
+include("Modules/Modules.php");
+
+$correo = $_POST["form-correo"];
+$pass   = $_POST["form-password"];
 
 $pass=md5($pass);
 
-echo conexion();
+//echo conexion();
+$server   = "localhost";
+$username = "root";
+$password = "";
+$database = "venta";
 
+$conn = new mysqli($server, $username, $password,$database);
 
-$login= 'select correo,pass from usuario where correo='.$correo.'';
+$login= 'SELECT correo,pass from usuario where correo="'.$correo.'"';
 
 $result = $conn->query($login);
 
 if ($result->num_rows > 0) 
 {
-    
     while($row = $result->fetch_assoc()) 
     {
         if ($row["correo"]==$correo) 
@@ -23,21 +29,21 @@ if ($result->num_rows > 0)
         	if ($row["pass"]=$pass) 
         	{
         		$_SESSION["usuario"] = $correo;
-        		//Acceso exitoso 
-        		// Redirigir o modificar 
+        		header("Location: ../index.php"); 
         	}
         	else
         	{
-        		//Clave invalida
+        		die(header("location: ../index.php?loginFailed=true"));
+                
         	}	
         	
         }
     }
-} 
-else 
-{
-    //Correo invalido
 }
+else
+
+die(header("location: ../index.php?loginFailed=true"));
+
 $conn->close();
 
 

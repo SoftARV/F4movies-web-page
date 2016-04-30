@@ -1,5 +1,5 @@
 <?php 
-		include("modules/Modules.php");
+		include("modules/modules.php");
 		session_start();
 ?>
 <!DOCTYPE html>

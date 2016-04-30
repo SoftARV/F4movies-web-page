@@ -69,7 +69,7 @@ function Menu(){
         			<p>Escribe Tu nombre de usuario y contraseña...</p>
         		</div>
         	<div class="modal-body">
-	                <form role="form" action="login.php" method="post" class="login-form">
+	                <form role="form" action="modules/login.php" method="post" class="login-form">
 	                   	<div class="form-group">
 	                    	<label class="sr-only" for="form-email">Correo</label>
 	                    	<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" id="form-correo">
@@ -83,7 +83,7 @@ function Menu(){
 
 	                </form>
 
-	                <form role="form" action="registro.php" method="post" class="register-form hidden-item">
+	                <form role="form" action="modules/registro.php" method="post" class="register-form hidden-item">
 	                   	<div class="row">
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
@@ -189,7 +189,7 @@ function Menu(){
 		            <ul class="nav navbar-nav navbar-right">
 		            	<li><a href="#">'.$_SESSION["usuario"].'</a></li>
 						<li><a href=""><img src="images/shopping_cart.png" title="carrito de compra" width="12"></a></li>
-		            	<li><a href="logout.php">Cerrar sesion</a></li>
+		            	<li><a href="modules/logout.php">Cerrar sesion</a></li>
 		            </ul>
 		        </div>
 		    </div>

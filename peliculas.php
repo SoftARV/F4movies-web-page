@@ -1,6 +1,5 @@
 <?php 
-		include("modules/Modules.php");
-		//include("modules/Peliculas.php");
+		include("modules/modules.php");
 		session_start();
 ?>
 <!DOCTYPE html>
@@ -97,7 +96,7 @@
 	?>
 </footer>
 <?php echo imports(); ?>
-<script type="text/javascript" src="livesearch.js"></script>
+<script type="text/javascript" src="js/livesearch.js"></script>
 <script type="text/javascript" src="js/switch_view.js"></script>
 </body>
 </html>
