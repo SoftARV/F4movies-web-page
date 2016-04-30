@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 include("modules/modules.php");
 
 $correo = $_POST["form-correo"];
