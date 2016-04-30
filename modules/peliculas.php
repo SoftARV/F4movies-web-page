@@ -13,12 +13,12 @@
     	{	
     		echo '<div class="movie col-md-4">
 					<div class="poster">
-						<a href="descripcion.php?pelicula="'.$row['ID_pelicula'].'"><img class="poster" src="'.$row['link_imagen'].'" alt="Poster"></a>
+						<a href="descripcion.php?pelicula='.$row['ID_pelicula'].'"><img class="poster" src="'.$row['link_imagen'].'" alt="Poster"></a>
 					</div>
 					<div class="description">
 						<h3 class="media-heading movie-title">'.$row['nombre'].'</h3>
 						<p>'.$row['descripcion'].'</p>
-						<a href="descripcion.php?pelicula="'.$row['ID_pelicula'].'"><button type="button" class="btn btn-default" value="'.$row['ID_pelicula'].'" aria-label="Left Align">
+						<a href="descripcion.php?pelicula='.$row['ID_pelicula'].'"><button type="button" class="btn btn-default" value="'.$row['ID_pelicula'].'" aria-label="Left Align">
   							<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar
 						</button></a>
 					</div>
