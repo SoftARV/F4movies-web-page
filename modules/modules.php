@@ -42,6 +42,7 @@ function Menu(){
 	            </ul>
 	            <ul class="nav navbar-nav navbar-right">
 	            	<button type="button" class="btn btn-inverted navbar-btn launch-modal" data-modal-id="modal-login">Iniciar Sesion</button>
+					<li><a href=""><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a></li>
 	            </ul>
 	        </div>
 	        <!-- /.navbar-collapse -->
@@ -187,8 +188,8 @@ function Menu(){
 		            </ul>
 		            <ul class="nav navbar-nav navbar-right">
 		            	<li><a href="#">'.$_SESSION["usuario"].'</a></li>
+						<li><a href=""><img src="images/shopping_cart.png" title="carrito de compra" width="12"></a></li>
 		            	<li><a href="logout.php">Cerrar sesion</a></li>
-		            	
 		            </ul>
 		        </div>
 		    </div>

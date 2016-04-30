@@ -18,18 +18,8 @@
 	<div class="row">
 		<div class="col-lg-9 col-lg-offset-2">
 			<div class="input-group">
-				<div class="input-group-btn">
-					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buscar<span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li><a href="#">Todos</a></li>
-						<li><a href="#">Genero</a></li>
-						<li><a href="#">Otros</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</div><!-- /btn-group -->
+				
 				<input type="text" class="form-control" aria-label="..." id="search">
-				<div id="livesearch"></div>
 				<div class="input-group-btn">
 					<button type="button" class="btn btn-default" aria-label="Grid View">
 						<span class="glyphicon glyphicon glyphicon-th" id="grid-view" aria-hidden="true"></span>
@@ -38,8 +28,18 @@
 					<button type="button" class="btn btn-default" aria-label="List View">
 						<span class="glyphicon glyphicon glyphicon-th-list" id="list-view" aria-hidden="true"></span>
 					</button>
+
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buscar<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Todos</a></li>
+						<li><a href="#">Genero</a></li>
+						<li><a href="#">Otros</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
 				</div>
 			</div><!-- /input-group -->
+			<div id="livesearch"></div>
 		</div><!-- /.col-lg-6 -->		
 	</div>
 
@@ -90,7 +90,7 @@
 
 		</div>
 	</div>
-
+</div>
 <footer>
 	<?php 
 		echo Footer();
