@@ -13,6 +13,25 @@
 	echo login();
 	?>	
 	<article>
+		<div class="container description">
+			<div class="row">
+				<div class="col-sm-8">
+					<h1 id="title">Bienvenido a F4movies</h1>
+					<form class="form-horizontal" action="">
+						<div class="form-group form-group-lg">
+							<input type="text" class="form-control">
+							<div class="input-group-btn">
+								<button type="button" class="btn btn-lg" aria-expanded="false">Buscar</span></button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img src="images/F4movies-navlogo.png" alt="logo" class="logo">
+				</div>
+			</div>
+		</div>
+
 		<div id="carousel" class="carousel slide" data-ride="carousel">
 		  	<!-- Indicators -->
 		  	<ol class="carousel-indicators">
@@ -52,39 +71,6 @@
 		    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		    	<span class="sr-only">Next</span>
 		  	</a>
-		</div>
-		
-		<div class="container description">
-			<div class="row">
-				<div class="col-sm-8">
-					<h1 id="title">Bienvenido a F4movies</h1>
-					<h3 id="text">Tu Pagina web para compra y envío de películas a  donde quieras cuando quieras</h3>
-				</div>
-				<div class="col-sm-4 text-center">
-					<img src="images/F4movies-navlogo.png" alt="logo" class="logo">
-				</div>
-			</div>
-		</div>
-
-		<div class="container-fluid description2">
-			<div class="row">
-				<div class="col-sm-4">
-					
-				</div>
-				<div class="col-sm-8">
-					<h1 id="title"></h1>
-					<h3 id="text">Tu Pagina web para compra y envío de películas a  donde quieras cuando quieras</h3>
-				</div>
-			</div>
-		</div>
-
-		<div class="container description">
-			<div class="row">
-				<div class="col-sm-8">
-					<h1 id="title">Aqui peliculas mas populares</h1>
-					<h3 id="text"></h3>
-				</div>
-			</div>
 		</div>
 
 	</article>
