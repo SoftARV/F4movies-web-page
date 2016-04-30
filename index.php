@@ -22,6 +22,7 @@
 		echo registro(); 
 		?>
 		</div>
+		
 			<div class="row">
 				<div class="col-md-8 search-bar">
 					<h1 class="title">Bienvenido a F4movies</h1>

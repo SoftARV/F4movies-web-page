@@ -1,5 +1,7 @@
 <?php
+
 include("modules/modules.php");
+
 
 $cedula = $_POST["form-cedula"];
 $nombre = $_POST["form-name"];
@@ -30,7 +32,9 @@ $result = $conn->query($validacion);
 
 if ($result->num_rows > 0)
 {
+
 	die(header("location: ../index.php?regFailed=true"));
+
 }
 else
 {
@@ -39,12 +43,16 @@ $registro= 'INSERT into usuario values (null,'.$cedula.',"'.$nombre.'","'.$apell
 
 if ($conn->query($registro) === TRUE) 
 {
+
     die(header("location: ../index.php?regFailed=false"));
 } 
 else 
 {
     die(header("location: ../index.php?regFailed=true"));
-}
+
+   
+} 
+
 
 $conn->close();
 
