@@ -22,6 +22,6 @@ function result()
       document.getElementById("livesearch").style.color="white";
     }
   }
-  xmlhttp.open("GET","livesearch.php?str="+str,true);
+  xmlhttp.open("GET","modules/livesearch.php?str="+str,true);
   xmlhttp.send();
 }
