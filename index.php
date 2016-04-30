@@ -70,3 +70,5 @@
 	<script src="js/carousel.js"></script>
 </body>
 </html>
+
+<style>input.ng-invalid {background-color: pink;</style>
