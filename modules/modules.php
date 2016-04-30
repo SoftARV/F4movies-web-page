@@ -37,7 +37,7 @@ function Menu(){
 	                    <a href="peliculas.php">Peliculas</a>
 	                </li>
 	                <li>
-	                    <a href="#">Contactanos</a>
+	                    <a href="contacto.php">Contactanos</a>
 	                </li>
 	            </ul>
 	            <ul class="nav navbar-nav navbar-right">
@@ -182,8 +182,8 @@ function Menu(){
 		        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		            <ul class="nav navbar-nav">
 		                <li><a href="Index.php">Inicio</a></li>
-		                <li><a href="#">Peliculas</a></li>
-		                <li><a href="#">Contactanos</a></li>
+		                <li><a href="peliculas.php">Peliculas</a></li>
+		                <li><a href="contacto.php">Contactanos</a></li>
 		            </ul>
 		            <ul class="nav navbar-nav navbar-right">
 		            	<li><a href="#">'.$_SESSION["usuario"].'</a></li>
