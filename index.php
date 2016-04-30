@@ -13,20 +13,21 @@
 	echo login();
 	?>	
 	<article>
+
 		<div class="container description">
 			<div class="row">
-				<div class="col-sm-8">
-					<h1 id="title">Bienvenido a F4movies</h1>
-					<form class="form-horizontal" action="">
-						<div class="form-group form-group-lg">
-							<input type="text" class="form-control">
+				<div class="col-md-8 search-bar">
+					<h1 class="title">Bienvenido a F4movies</h1>
+					<form action="" class="form-horizontal">
+						<div class="form-group form-group-lg input-group">
+							<input type="text" class="form-control" placeholder="Buscar Pelicula...">
 							<div class="input-group-btn">
-								<button type="button" class="btn btn-lg" aria-expanded="false">Buscar</span></button>
+								<button class="btn btn-lg"><span class="glyphicon glyphicon-search"></span></button>
 							</div>
 						</div>
 					</form>
 				</div>
-				<div class="col-sm-4 text-center">
+				<div class="col-md-4 text-center">
 					<img src="images/F4movies-navlogo.png" alt="logo" class="logo">
 				</div>
 			</div>
