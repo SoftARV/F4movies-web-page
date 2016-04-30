@@ -15,7 +15,6 @@
 <body>
 	<?php 
 		echo Menu();
-
 		pelicula($id_pelicula);
 	?>
 	<div class="row">
