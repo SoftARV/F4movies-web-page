@@ -11,11 +11,17 @@
 <body>
 	<?php 
 	echo Menu(); 
-	echo login();
 	?>	
 	<article>
 
 		<div class="container description">
+		<div class="row">
+		<div class="col-lg-4 col-lg-offset-4" >
+		<?php 
+		echo login(); 
+		echo registro(); 
+		?>
+		</div>
 		
 			<div class="row">
 				<div class="col-md-8 search-bar">
