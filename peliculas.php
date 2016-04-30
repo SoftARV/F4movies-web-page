@@ -14,7 +14,9 @@
 	<?php 
 		echo Menu();
 	?>
+	<?php 
 
+	?>
 	<div class="row">
 		<div class="col-lg-9 col-lg-offset-2">
 			<div class="input-group">
