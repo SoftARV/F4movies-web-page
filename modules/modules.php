@@ -71,11 +71,11 @@ function Menu(){
 	                <form role="form" action="login.php" method="post" class="login-form">
 	                   	<div class="form-group">
 	                    	<label class="sr-only" for="form-email">Correo</label>
-	                    	<input type="email" name="form-correo" placeholder="Correo..." class="form-correo form-control" id="form-correo">
+	                    	<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" id="form-correo">
 	                    </div>
 	                    <div class="form-group">
 	                        <label class="sr-only" for="form-password">Password</label>
-	                        <input type="password" name="form-password" placeholder="Contraseña..." class="form-password form-control" id="form-password">
+	                        <input type="password" name="form-password" placeholder="Contraseña..." class="form-password login-input form-control" id="form-password">
 	                    </div>
 	                    <button type="submit" class="btn login">Iniciar Sesion</button>
 	                    
@@ -87,61 +87,61 @@ function Menu(){
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-cedula">Cedula</label>
-	                    			<input type="number" name="form-cedula" placeholder="Cedula..." class="form-username form-control" id="form-cedula">
+	                    			<input type="number" name="form-cedula" placeholder="Cedula..." class="form-cedula login-input form-control" id="form-cedula">
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-6">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-name">Nombre</label>
-	                    			<input type="text" name="form-name" placeholder="Nombre..." class="form-username form-control" id="form-name">
+	                    			<input type="text" name="form-name" placeholder="Nombre..." class="form-name login-input form-control" id="form-name">
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-6">
 	                    		<div class="form-group">
 	                    			<label class="sr-only" for="form-lastname">Apellido</label>
-	                    			<input type="text" name="form-lastname" placeholder="Apellido..." class="form-username form-control" id="form-lastname">
+	                    			<input type="text" name="form-lastname" placeholder="Apellido..." class="form-lastname login-input form-control" id="form-lastname">
 	                    		</div>
 	                   		</div>
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-dir1">Direccion Primaria</label>
-	                    			<input type="text" name="form-dir1" placeholder="Direccion Primaria..." class="form-username form-control" id="form-dir1">
+	                    			<input type="text" name="form-dir1" placeholder="Direccion Primaria..." class="form-dir1 login-input form-control" id="form-dir1">
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-dir2">Direccion Secundaria...</label>
-	                    			<input type="text" name="form-dir2" placeholder="Direccion Secundaria..." class="form-username form-control" id="form-dir2">
+	                    			<input type="text" name="form-dir2" placeholder="Direccion Secundaria..." class="form-dir2 login-input form-control" id="form-dir2">
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-telefono">Telefono</label>
-	                    			<input type="number" name="form-telefono" placeholder="Numero de Telefono..." class="form-username form-control" id="form-telefono">
+	                    			<input type="number" name="form-telefono" placeholder="Numero de Telefono..." class="form-telefono login-input form-control" id="form-telefono">
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-correo">Correo</label>
-	                    			<input type="email" name="form-correo" placeholder="Correo..." class="form-username form-control" id="form-correo">
+	                    			<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" id="form-correo">
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-12">
 	                    		<div class="form-group">
 	                    			<label class="sr-only" for="form-username">Usuario</label>
-	                    			<input type="text" name="form-username" placeholder="Usuario..." class="form-username form-control" id="form-username">
+	                    			<input type="text" name="form-username" placeholder="Usuario..." class="form-username login-input form-control" id="form-username">
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-6">
 	                    		<div class="form-group">
 	                        		<label class="sr-only" for="form-password">Contraseña</label>
-	                        		<input type="password" name="form-password" placeholder="Contraseña..." class="form-password form-control" id="form-password">
+	                        		<input type="password" name="form-password" placeholder="Contraseña..." class="form-password login-input form-control" id="form-password">
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-6">
 	                    		<div class="form-group">
 	                    			<label class="sr-only" for="form-repassword">Repetir Contraseña</label>
-	                        		<input type="password" name="form-repassword" placeholder="Repetir Contraseña..." class="form-repassword form-control" id="form-repassword">
+	                        		<input type="password" name="form-repassword" placeholder="Repetir Contraseña..." class="form-repassword login-input form-control" id="form-repassword">
 	                        	</div>
 	                        </div>
 	                    	
@@ -214,7 +214,7 @@ function imports() {
 	return '<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>';
+    <script type="text/javascript" src="js/login_scripts.js"></script>';
 }
 
 function login(){

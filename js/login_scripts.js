@@ -1,5 +1,5 @@
 
-jQuery(document).ready(function() {
+$(document).ready(function() {
 	
     /*
         Fullscreen background
@@ -36,14 +36,14 @@ jQuery(document).ready(function() {
     });
 
     $('#modal-login').on('hidden.bs.modal', function (e) {
-        $('.register-head').toggle(function() {
-            $('.login-head').toggle();
+        $('.register-head').hide(function() {
+            $('.login-head').show();
         });
-        $('.register-form').toggle(function() {
-            $('.login-form').toggle();
+        $('.register-form').hide(function() {
+            $('.login-form').show();
         });
-        $('.login-btn').toggle(function() {
-            $('.register-btn').toggle();
+        $('.login-btn').hide(function() {
+            $('.register-btn').show();
         });
     })
     
@@ -71,19 +71,4 @@ jQuery(document).ready(function() {
         });
     });
 
-    $('#list-view').click(function(){
-        $('.movie').removeClass().addClass('movie col-md-12', function() {
-            $('.poster').removeClass().addClass('poster col-md-6', function() {
-                $('.description').removeClass().addClass('description col-md-6')
-            })
-        })
-    })
-    
-    $('#grid-view').click(function(){
-        $('.movie').removeClass().addClass('col-md-4', function() {
-            $('.poster').removeClass.addClass('poster',function() {
-                $('.description').removeClass().addClass('description')
-            })
-        })
-    })
 })

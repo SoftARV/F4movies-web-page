@@ -6,12 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-			<title>Peliculas F4Movies || '.$Titulo.'</title>
-			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-			<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-			<link rel="stylesheet" type="text/css" href="css/style-main.css">
-			<link rel="stylesheet" type="text/css" href="css/style-index.css">
+	<?php echo Head('Peliculas'); ?>
 			<link rel="stylesheet" type="text/css" href="css/style-peliculas.css">
 </head>
 <body>
@@ -103,5 +98,6 @@
 </footer>
 <?php echo imports(); ?>
 <script type="text/javascript" src="livesearch.js"></script>
+<script type="text/javascript" src="js/switch_view.js"></script>
 </body>
 </html>
