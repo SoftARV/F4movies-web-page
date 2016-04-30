@@ -38,6 +38,11 @@ body {
     display: none;
 }
 
+.container .jumbotron{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
 footer {
     right: 0;
     bottom: 0;
