@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
 	<?php echo Head('Peliculas'); ?>
-			<link rel="stylesheet" type="text/css" href="css/style-peliculas.css">
+	<link rel="stylesheet" type="text/css" href="css/style-peliculas.css">
 </head>
 <body>
 <div class="container">
