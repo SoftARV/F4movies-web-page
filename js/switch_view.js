@@ -9,11 +9,11 @@ $(document).ready(function() {
     })
     
     $('#grid-view').click(function(){
-        $('.movie').removeClass().addClass('col-md-4', function() {
+        $('.movie').removeClass().addClass('movie col-md-4', function() {
             $('.poster').removeClass.addClass('poster',function() {
                 $('.description').removeClass().addClass('description')
             })
         })
     })
-    
+
 })
