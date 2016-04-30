@@ -1,42 +1,49 @@
 <?php
-include("modules/Modules.php");
+include("Modules/Modules.php");
 
-$cedula = $_POST["cedula"];
-$nombre = $_POST["nombre"];
-$apellido = $_POST["apellido"];
-$correo = $_POST["correo"];
-$telefono = $_POST["telefono"];
-$direccion1 = $_POST["direccion1"];
-$direccion2 = $_POST["direccion2"];
-$nick = $_POST["nick"];
-$pass = $_POST["pass"];
+$cedula = $_POST["form-cedula"];
+$nombre = $_POST["form-name"];
+$apellido = $_POST["form-lastname"];
+$correo = $_POST["form-correo"];
+$telefono = $_POST["form-telefono"];
+$direccion1 = $_POST["form-dir1"];
+$direccion2 = $_POST["form-dir2"];
+$nick = $_POST["form-username"];
+$pass = $_POST["form-password"];
+$repass = $_POST["form-repassword"];
+
 
 $direccion=$direccion1+$direccion2;
 $pass=md5($pass);
 
-echo conexion();
+//echo conexion();
+$server   = "localhost";
+$username = "root";
+$password = "";
+$database = "venta";
 
+$conn = new mysqli($server, $username, $password,$database);
 
-$validacion= 'select correo from usuario where correo='.$correo.'';
+$validacion= 'SELECT correo from usuario where correo="'.$correo.'"';
 
 $result = $conn->query($validacion);
 
 if ($result->num_rows > 0)
 {
-	//correo registrado
+	echo "correo registrado";
 }
 else
 {
 
-$registro= 'insert into usuario values(default,"'.$cedula.'",'.$nombre.'","'.$apellido.'","'.$correo.'","'.$telefono.'","'.$direccion.'","'.$nick.'","'.$pass.'")';
+$registro= 'INSERT into usuario values (null,'.$cedula.',"'.$nombre.'","'.$apellido.'","'.$correo.'",'.$telefono.',"'.$direccion.'",1,1,"'.$nick.'","'.$pass.'")';
 
 if ($conn->query($registro) === TRUE) 
 {
-    //Registro exitoso
+    echo "Registro exitoso";
 } 
 else 
 {
-    //Registro fallido
+    echo "Registro fallido";
 }
 
 $conn->close();
