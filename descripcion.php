@@ -1,6 +1,8 @@
 <?php 
 		include("modules/modules.php");
-		session_start();
+
+		$id_pelicula = $_GET['pelicula'];
+		echo $id_pelicula;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,6 +51,9 @@
 				<h3 class="media-heading">Movie Title</h3>
 				<div id="info" class="container">
 					<h4>Director</h4>
+					<?php 
+					 echo $id_pelicula;
+					 ?>
 					<p>Juan</p>
 					<h4>Categoria</h4>
 					<p>A</p>
