@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-include("Modules/Modules.php");
+
+include("modules/modules.php");
 
 $correo = $_POST["form-correo"];
 $pass   = $_POST["form-password"];
@@ -29,7 +30,11 @@ if ($result->num_rows > 0)
         	if ($row["pass"]=$pass) 
         	{
         		$_SESSION["usuario"] = $correo;
+
+        		die(header("location: ../index.php?loginFailed=false")); 
+
         		header("Location: ../index.php"); 
+
         	}
         	else
         	{

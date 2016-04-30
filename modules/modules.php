@@ -221,14 +221,51 @@ function imports() {
 function login(){
 	if (isset($_GET["loginFailed"]))
 	{
+		
+		if ($_GET["loginFailed"]==='true') 
+		{	
 		echo'
 		<div class="alert alert-warning">
   		<a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  		<strong>Error</strong> Login invalido.
+  		<strong>Error</strong> Login Fallido.
 		</div>';
+		}
+		else
+		{
+		echo'
+		<div class="alert alert-success">
+  		<a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  		<strong>EXITO</strong> Login Exitoso.
+		</div>';
+		}
 	}
 	
 }
+
+function registro(){
+	if (isset($_GET["regFailed"]))
+	{
+		if ($_GET["regFailed"]==='true') 
+		{
+		echo'
+		<div class="alert alert-warning">
+  		<a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  		<strong>Error</strong> Registro Fallido.
+		</div>';
+		}
+		else
+		{
+		echo'
+		<div class="alert alert-success">
+  		<a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  		<strong>EXITO</strong> Registro Exitoso.
+		</div>';
+		}
+
+	}
+	
+}
+
 	
 function conexion(){	
 	$server = "localhost";
