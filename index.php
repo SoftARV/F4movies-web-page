@@ -23,17 +23,18 @@
 					?>
 				</div>
 			</div>
-
+			
 			<div class="row main-search">
 				<div class="col-md-8 col-sm-8">
 					<h1>Bienvenido a F4movies</h1>
 					<form action="" class="form-horizontal">
 						<div class="form-group form-group-lg input-group">
-							<input type="text" class="form-control" placeholder="Buscar Pelicula...">
+							<input type="text" id="search" class="form-control" placeholder="Buscar Pelicula...">
 							<div class="input-group-btn">
-								<button class="btn btn-lg"><span class="glyphicon glyphicon-search"></span></button>
+								<button class="btn btn-lg search-btn"><span class="glyphicon glyphicon-search"></span></button>
 							</div>
 						</div>
+						<div id="livesearch"></div>
 					</form>
 				</div>
 				<div class="col-md-4 col-sm-4">
@@ -50,5 +51,6 @@
 	</footer>
 
 	<?php echo imports(); ?>
+	<script type="text/javascript" src="js/livesearch.js"></script>
 </body>
 </html>	

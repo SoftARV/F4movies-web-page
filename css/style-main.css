@@ -34,6 +34,13 @@ body {
     background-color: white !important;
 }
 
+#livesearch {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 2;
+}
+
 .hidden-item {
     display: none;
 }
