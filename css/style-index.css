@@ -1,7 +1,10 @@
 
 .description {
-	height: 300px;
 	color: white;
+}
+
+.jumbotron {
+	background-size: cover;
 }
 
 .search-bar {

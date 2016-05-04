@@ -5,7 +5,7 @@ $(document).ready(function(){
         if (searchKeyword.length >= 3) {
             $.post('../F4movies-web-page/modules/search.php',{ keywords: searchKeyword }, function(data) {
                 $('div#livesearch').empty(function() {
-                    $('div#livesearch').style('display: initial')
+                    $('div#livesearch').show()
                 })
                 
                 $.each(data, function() {
@@ -14,7 +14,7 @@ $(document).ready(function(){
             }, 'json')
         }else if(searchKeyword.length <= 3) {
             $('div#livesearch').empty(function() {
-                $('div#livesearch').style('display: none')
+                $('div#livesearch').hide()
             })
         }
     })
