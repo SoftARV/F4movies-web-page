@@ -22,6 +22,7 @@
 			<div class="input-group">
 				
 				<input type="text" class="form-control" aria-label="..." id="search">
+				<div id="livesearch"></div>
 				<div class="input-group-btn">
 					<button type="button" class="btn btn-default" aria-label="Grid View">
 						<span class="glyphicon glyphicon glyphicon-th" id="grid-view" aria-hidden="true"></span>
@@ -41,7 +42,6 @@
 					</ul>
 				</div>
 			</div><!-- /input-group -->
-			<div id="livesearch"></div>
 		</div><!-- /.col-lg-6 -->		
 	</div>
 
