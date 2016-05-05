@@ -7,7 +7,7 @@
 
 
 		$conn = new mysqli($server, $username, $password,$database);
-		$listadoPeliculas = 'SELECT ID_pelicula,nombre,descripcion,link_imagen FROM pelicula';
+		$listadoPeliculas = 'SELECT ID_pelicula,nombre,link_imagen,precio FROM pelicula';
 		$result = $conn->query($listadoPeliculas);
 		 while($row = $result->fetch_assoc()) 
     	{	
@@ -17,7 +17,7 @@
 					</div>
 					<div class="description">
 						<h3 class="media-heading movie-title">'.$row['nombre'].'</h3>
-						<p>'.$row['descripcion'].'</p>
+						<p>'.$row['precio'].' BsF</p>
 						<a href="descripcion.php?pelicula='.$row['ID_pelicula'].'"><button type="button" class="btn btn-default" value="'.$row['ID_pelicula'].'" aria-label="Left Align">
   							<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar
 						</button></a>

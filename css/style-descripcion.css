@@ -1,4 +1,19 @@
-.poster{
-	max-width: 336px;
-    max-height: 400px
+#movies {
+	margin: 20px;
 }
+
+img.poster{
+	max-width: 336px;
+
+	margin: 10px;
+}
+
+.media-body {
+	margin: 30px;
+}
+
+footer {
+	position: block;
+}
+
+

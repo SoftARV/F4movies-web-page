@@ -13,11 +13,11 @@
 
 	if (!empty($_POST["keywords"])) {
 		$keywords = $_POST['keywords'];
-		$queryMovie = 'SELECT nombre from pelicula where nombre like "'.$keywords.'%"';
+		$queryMovie = 'SELECT ID_pelicula, nombre from pelicula where nombre like "'.$keywords.'%"';
 		$result = $db -> query($queryMovie) or die($mysqli->error);
 		if ($result->num_rows > 0) {
 			while ($obj = $result->fetch_object()) {
-				$data[] = array('nombre' => $obj->nombre );
+				$data[] = array('id' => $obj->ID_pelicula, 'nombre' => $obj->nombre);
 			}
 		}
 	}

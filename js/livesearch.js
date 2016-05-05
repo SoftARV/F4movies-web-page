@@ -9,7 +9,7 @@ $(document).ready(function(){
                 })
                 
                 $.each(data, function() {
-                    $('div#livesearch').append('<p><a href="#">' + this.nombre + '</a></p>')
+                    $('div#livesearch').append('<p><a href="descripcion.php?pelicula=' + this.id + '">' + this.nombre + '</a></p>')
                 })
             }, 'json')
         }else if(searchKeyword.length <= 3) {
