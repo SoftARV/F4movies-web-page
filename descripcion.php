@@ -46,8 +46,8 @@
 	<div class="container">
 		<div class="media">
 			<div id="movies">
-				<div class="media-left media-top" id=""><a href="#">
-					<?php echo '<img class="media-object" src="'.$_SESSION['link_imagen'].'" alt="Poster">'; ?>
+				<div class="media-left media-top poster" ><a href="#">
+					<?php echo '<img class="media-object poster" src="'.$_SESSION['link_imagen'].'" alt="Poster">'; ?>
 				</a></div>
 				<div class="media-body ">
 					<h3 class="media-heading"><?php echo $_SESSION['nombre'] ?></h3>
@@ -63,6 +63,9 @@
 						<h4>Precio</h4>
 						<p><?php echo $_SESSION['precio'] ?></p>
 					</div>
+					<a href="descripcion.php?pelicula='.$row['ID_pelicula'].'"><button type="button" class="btn btn-default" value="'.$row['ID_pelicula'].'" aria-label="Left Align">
+  							<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar
+						</button></a>
 					<p class="descripcion"><?php echo $_SESSION['descripcion'] ?></p>
 				</div>
 			</div>
