@@ -27,7 +27,7 @@
 			<div class="row main-search">
 				<div class="col-md-8 col-sm-8">
 					<h1>Bienvenido a F4movies</h1>
-					<form action="" class="form-horizontal">
+					<form action="" class="form-horizontal search">
 						<div class="form-group form-group-lg input-group">
 							<input type="text" id="search" class="form-control" placeholder="Buscar Pelicula...">
 							<div class="input-group-btn">
