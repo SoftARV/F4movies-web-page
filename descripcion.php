@@ -17,7 +17,7 @@
 		echo Menu();
 		pelicula($id_pelicula);
 	?>
-	<div class="row">
+	<div class="row search-bar">
 		<div class="col-lg-9 col-lg-offset-2">
 			<div class="input-group">
 				<div class="input-group-btn">
@@ -49,7 +49,7 @@
 				<div class="media-left media-top poster" ><a href="#">
 					<?php echo '<img class="media-object poster" src="'.$_SESSION['link_imagen'].'" alt="Poster">'; ?>
 				</a></div>
-				<div class="media-body ">
+				<div class="media-body">
 					<h3 class="media-heading"><?php echo $_SESSION['nombre'] ?></h3>
 					<div id="info" class="container">
 						<h4>Director</h4>
@@ -86,7 +86,6 @@
 		<div class="page-header">
 			<h1>Comentarios</h1>
 		</div>
-	</div>
 	</div>
 
 <footer>
