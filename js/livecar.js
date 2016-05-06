@@ -13,15 +13,33 @@ function addCar(str) {
                 document.getElementById("addLiveCar").innerHTML +=xmlhttp.responseText;
             }
         }
-        xmlhttp.open("GET","modules/livecar.php?str="+str,true);
+        xmlhttp.open("GET","modules/addCar.php?str="+str,true);
         xmlhttp.send();
     }
 
 
-    function delCar(str)
+    function delCar(str2)
     { 
-        parent = str.parentNode.parentNode.parentNode;
+
+        var str=str2.value;
+        if (window.XMLHttpRequest) 
+        {
+            xmlhttp=new XMLHttpRequest();
+        }
+        xmlhttp.onreadystatechange=function() 
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200) 
+            {
+                document.getElementById("addLiveCar").innerHTML +=xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET","modules/delCar.php?str="+str,true);
+        xmlhttp.send();
+
+        parent = str2.parentNode.parentNode.parentNode;
         parent.remove();
+
+
     }
 
 
