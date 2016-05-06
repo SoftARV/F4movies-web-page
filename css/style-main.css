@@ -1,6 +1,6 @@
 body {
     padding-top: 51px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-    background: #282827;
+    background: #7F7F7F;
 }
 
 .navbar {
@@ -34,6 +34,22 @@ body {
     background-color: white !important;
 }
 
+.search {
+    position: relative;
+}
+
+#livesearch {
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    display: inline-block;
+    z-index: 1030;
+}
+
+#livesearch > p {
+    margin: 10px;
+}
+
 .hidden-item {
     display: none;
 }
@@ -44,9 +60,10 @@ body {
 }
 
 footer {
-    right: 0;
-    bottom: 0;
-    left: 0;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
     padding: 1rem;
     background-color: #2D54AD;
     text-align: center;
@@ -57,3 +74,5 @@ footer {
         padding-top: 51px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
 }
+
+

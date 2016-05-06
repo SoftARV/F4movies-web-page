@@ -6,7 +6,10 @@ function Head($Titulo){
 			<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 			<link rel="stylesheet" type="text/css" href="css/style-main.css">
 			<link rel="stylesheet" type="text/css" href="css/style-index.css">
-			<link rel="stylesheet" type="text/css" href="css/style-login.css">';
+			<link rel="stylesheet" type="text/css" href="css/style-login.css">
+			<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+			<link rel="stylesheet" href="css/style-carrito.css">
+			';
 }	
 
 function Menu(){
@@ -42,7 +45,7 @@ function Menu(){
 	            </ul>
 	            <ul class="nav navbar-nav navbar-right">
 	            	<button type="button" class="btn btn-inverted navbar-btn launch-modal" data-modal-id="modal-login">Iniciar Sesion</button>
-					<li><a href=""><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a></li>
+					<li><a class="launch-modal" data-modal-id="modal-car"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a></li>
 	            </ul>
 	        </div>
 	        <!-- /.navbar-collapse -->
@@ -72,11 +75,11 @@ function Menu(){
 	                <form role="form" action="modules/login.php" method="post" class="login-form">
 	                   	<div class="form-group">
 	                    	<label class="sr-only" for="form-email">Correo</label>
-	                    	<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" id="form-correo">
+	                    	<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" ng-model="form-correo" required>
 	                    </div>
 	                    <div class="form-group">
 	                        <label class="sr-only" for="form-password">Password</label>
-	                        <input type="password" name="form-password" placeholder="Contraseña..." class="form-password login-input form-control" id="form-password">
+	                        <input type="password" name="form-password" placeholder="Contraseña..." class="form-password login-input form-control" ng-model="form-password" required>
 	                    </div>
 	                    <button type="submit" class="btn login">Iniciar Sesion</button>
 	                    
@@ -88,61 +91,61 @@ function Menu(){
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-cedula">Cedula</label>
-	                    			<input type="number" name="form-cedula" placeholder="Cedula..." class="form-cedula login-input form-control" id="form-cedula">
+	                    			<input type="number" name="form-cedula" placeholder="Cedula..." class="form-cedula login-input form-control" id="form-cedula" ng-model="form-cedula" required>
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-6">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-name">Nombre</label>
-	                    			<input type="text" name="form-name" placeholder="Nombre..." class="form-name login-input form-control" id="form-name">
+	                    			<input type="text" name="form-name" placeholder="Nombre..." class="form-name login-input form-control" id="form-name" ng-model="form-name" required>
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-6">
 	                    		<div class="form-group">
 	                    			<label class="sr-only" for="form-lastname">Apellido</label>
-	                    			<input type="text" name="form-lastname" placeholder="Apellido..." class="form-lastname login-input form-control" id="form-lastname">
+	                    			<input type="text" name="form-lastname" placeholder="Apellido..." class="form-lastname login-input form-control" id="form-lastname" ng-model="form-lastname" required>
 	                    		</div>
 	                   		</div>
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-dir1">Direccion Primaria</label>
-	                    			<input type="text" name="form-dir1" placeholder="Direccion Primaria..." class="form-dir1 login-input form-control" id="form-dir1">
+	                    			<input type="text" name="form-dir1" placeholder="Direccion Primaria..." class="form-dir1 login-input form-control" id="form-dir1" ng-model="form-dir1"required>
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-dir2">Direccion Secundaria...</label>
-	                    			<input type="text" name="form-dir2" placeholder="Direccion Secundaria..." class="form-dir2 login-input form-control" id="form-dir2">
+	                    			<input type="text" name="form-dir2" placeholder="Direccion Secundaria..." class="form-dir2 login-input form-control" id="form-dir2" ng-model="form-dir2" required>
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-telefono">Telefono</label>
-	                    			<input type="number" name="form-telefono" placeholder="Numero de Telefono..." class="form-telefono login-input form-control" id="form-telefono">
+	                    			<input type="number" name="form-telefono" placeholder="Numero de Telefono..." class="form-telefono login-input form-control" id="form-telefono" ng-model="form-telefono" required>
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-correo">Correo</label>
-	                    			<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" id="form-correo">
+	                    			<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" id="form-correo" ng-model="form-correo" required>
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-12">
 	                    		<div class="form-group">
 	                    			<label class="sr-only" for="form-username">Usuario</label>
-	                    			<input type="text" name="form-username" placeholder="Usuario..." class="form-username login-input form-control" id="form-username">
+	                    			<input type="text" name="form-username" placeholder="Usuario..." class="form-username login-input form-control" id="form-username" ng-model="form-username" required>
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-6">
 	                    		<div class="form-group">
 	                        		<label class="sr-only" for="form-password">Contraseña</label>
-	                        		<input type="password" name="form-password" placeholder="Contraseña..." class="form-password login-input form-control" id="form-password">
+	                        		<input type="password" name="form-password" placeholder="Contraseña..." class="form-password login-input form-control" id="form-password" ng-model="form-password" required>
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-6">
 	                    		<div class="form-group">
 	                    			<label class="sr-only" for="form-repassword">Repetir Contraseña</label>
-	                        		<input type="password" name="form-repassword" placeholder="Repetir Contraseña..." class="form-repassword login-input form-control" id="form-repassword">
+	                        		<input type="password" name="form-repassword" placeholder="Repetir Contraseña..." class="form-repassword login-input form-control" id="form-repassword" ng-model="form-repassword" required>
 	                        	</div>
 	                        </div>
 	                    	
@@ -159,6 +162,31 @@ function Menu(){
 	                <p>Ya Tienes Una cuenta? Inicia Sesion</p>
 	                <button type="submit" class="btn login" id="login-switch">Iniciar Sesion</button>
 	            </div>
+        	</div>
+       	</div>
+    </div>
+
+    <!-- modal shopping cart -->
+	<div class="modal fade" id="modal-car" tabindex="-1" role="dialog" aria-labelledby="modal-cart-label" aria-hidden="true">
+       	<div class="modal-dialog">
+        	<div class="modal-content">
+
+        		<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal">
+        				<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        			</button>
+        			<h3 class="modal-title" id="modal-login-label">Carrito de Compra</h3>
+        		</div>
+
+        		<div class="modal-body">
+	                <ul id="livecar">
+	                </ul>
+        		</div>
+
+        		<div class="modal-footer">
+        			<button type="button" class="btn btn-primary checkout">Finalizar Compra</button>
+        		</div>
+
         	</div>
        	</div>
     </div>
@@ -187,13 +215,54 @@ function Menu(){
 		                <li><a href="contacto.php">Contactanos</a></li>
 		            </ul>
 		            <ul class="nav navbar-nav navbar-right">
-		            	<li><a href="#">'.$_SESSION["usuario"].'</a></li>
-						<li><a href=""><img src="images/shopping_cart.png" title="carrito de compra" width="12"></a></li>
+		            	<li><a href="usuario.php">'.$_SESSION["usuario"].'</a></li>
+						<li><a class="launch-modal" data-modal-id="modal-car"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a></li>
 		            	<li><a href="modules/logout.php">Cerrar sesion</a></li>
 		            </ul>
 		        </div>
 		    </div>
-		</nav>';
+		</nav>
+		
+		<!-- modal shopping cart -->
+	<div class="modal fade" id="modal-car" tabindex="-1" role="dialog" aria-labelledby="modal-cart-label" aria-hidden="true">
+       	<div class="modal-dialog">
+        	<div class="modal-content">
+
+        		<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal">
+        				<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        			</button>
+        			<h3 class="modal-title" id="modal-login-label">Carrito de Compra</h3>
+        		</div>
+
+        		<div class="modal-body">
+	                <ul>
+	                	<li>
+	                		<div class="row">
+	                			<div class="col-md-2 poster-movie">
+	                				<img src="http://ia.media-imdb.com/images/M/MV5BMjQyMzgzNTYzNF5BMl5BanBnXkFtZTgwNjA5OTQ3ODE@._V1_UX182_CR0,0,182,268_AL_.jpg" width="60" alt="">
+	                			</div>
+	                			<div class="col-md-8 description-movie">
+	                				<h2>Titulo Pelicula</h2>
+	                				<p>Precio...</p>
+	                			</div>
+	                			<div class="col-md-2 remove-movie">
+	                				<a href=""><img src="images/delete_sign.png" alt=""></a>
+	                			</div>
+	                		</div>
+	                	</li>
+	                </ul>
+        		</div>
+
+        		<div class="modal-footer">
+        			<button type="button" class="btn btn-primary checkout">Finalizar Compra</button>
+        		</div>
+
+        	</div>
+       	</div>
+    </div>
+
+		';
 	}
 	}
 

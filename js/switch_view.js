@@ -1,19 +1,23 @@
 $(document).ready(function() {
 
-    $('#list-view').click(function(){
-        $('.movie').removeClass().addClass('movie col-md-12', function() {
-            $('.poster').removeClass().addClass('poster col-md-6', function() {
-                $('.description').removeClass().addClass('description col-md-6')
-            })
-        })
-    })
-    
-    $('#grid-view').click(function(){
-        $('.movie').removeClass().addClass('movie col-md-4', function() {
-            $('.poster').removeClass.addClass('poster',function() {
-                $('.description').removeClass().addClass('description')
-            })
-        })
-    })
+    $('#list-view').on('click',function(){
+        $('.movie').removeClass('col-lg-4');
+        $('.movie').addClass('col-lg-12');
+        $('.poster').removeClass('col-lg-6')
+        $('.poster').addClass('col-lg-6');
+        $('.description').removeClass('col-lg-12');
+        $('.description').addClass('col-lg-8');
+        
+    });
 
-})
+   $('#grid-view').on('click',function(){
+        $('.movie').removeClass('col-lg-12');
+        $('.movie').addClass('col-lg-4');
+        $('.poster').removeClass('col-lg-6');
+        $('.poster').addClass('col-lg-6');
+        $('.description').removeClass('col-lg-8');
+        $('.description').addClass('col-lg-12');
+        
+    });
+
+});

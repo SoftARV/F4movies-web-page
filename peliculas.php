@@ -1,5 +1,6 @@
 <?php 
 		include("modules/modules.php");
+		include("modules/peliculas.php");
 		session_start();
 ?>
 <!DOCTYPE html>
@@ -13,9 +14,11 @@
 	<?php 
 		echo Menu();
 	?>
+	<?php 
 
+	?>
 	<div class="row">
-		<div class="col-lg-9 col-lg-offset-2">
+		<div class="col-lg-9 col-lg-offset-2 search">
 			<div class="input-group">
 				
 				<input type="text" class="form-control" aria-label="..." id="search">
@@ -55,38 +58,11 @@
 			</div>
 		</div>
 		
-		<div class="col-lg-9" style="color: white;">
-			
-			<div class="movie col-md-4">
-				<div class="poster">
-					<a href=""><img class="poster" src="images/Default.jpg" alt="Poster"></a>
-				</div>
-				<div class="description">
-					<h3 class="media-heading movie-title">Movie Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquam, illum fugit magnam ea. Odio quia esse, tenetur excepturi quisquam amet repellendus adipisci cumque facilis, voluptas ratione, omnis perferendis tempore.</p>
-				</div>
+		<div class="col-lg-10" style="color: white;">
+			<?php 
+				movies();
+			?>
 			</div>
-			
-			<div class="movie col-md-4">
-				<div class="poster">
-					<a href=""><img class="poster" src="images/Default.jpg" alt="Poster"></a>
-				</div>
-				<div class="description">
-					<h3 class="media-heading movie-title">Movie Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquam, illum fugit magnam ea. Odio quia esse, tenetur excepturi quisquam amet repellendus adipisci cumque facilis, voluptas ratione, omnis perferendis tempore.</p>
-				</div>
-			</div>
-
-			<div class="movie col-md-4">
-				<div class="poster">
-					<a href=""><img class="poster" src="images/Default.jpg" alt="Poster"></a>
-				</div>
-				<div class="description">
-					<h3 class="media-heading movie-title">Movie Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquam, illum fugit magnam ea. Odio quia esse, tenetur excepturi quisquam amet repellendus adipisci cumque facilis, voluptas ratione, omnis perferendis tempore.</p>
-				</div>
-			</div>
-
 		</div>
 	</div>
 </div>
@@ -97,6 +73,7 @@
 </footer>
 <?php echo imports(); ?>
 <script type="text/javascript" src="js/livesearch.js"></script>
+<script type="text/javascript" src="js/livecar.js"></script>
 <script type="text/javascript" src="js/switch_view.js"></script>
 </body>
 </html>

@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 include("modules/modules.php");
 
 $correo = $_POST["form-correo"];
@@ -17,7 +16,7 @@ $database = "venta";
 
 $conn = new mysqli($server, $username, $password,$database);
 
-$login= 'SELECT correo,pass from usuario where correo="'.$correo.'"';
+$login= 'SELECT correo,pass,perfil from usuario where correo="'.$correo.'"';
 
 $result = $conn->query($login);
 
@@ -30,6 +29,7 @@ if ($result->num_rows > 0)
         	if ($row["pass"]=$pass) 
         	{
         		$_SESSION["usuario"] = $correo;
+                $_SESSION["perfil"] = $row['perfil'];
 
         		die(header("location: ../index.php?loginFailed=false")); 
 

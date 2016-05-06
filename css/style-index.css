@@ -1,16 +1,15 @@
-.carousel .carousel-inner .item img {
-	height: 300px;
-	margin: 0 auto;
-}
-
-.movie-list {
-	margin-top: 50px;
-}
 
 .description {
-	height: 300px;
 	color: white;
-	margin-top: 35px;
+}
+
+.row{
+    margin-right: 0px !important;
+}
+.jumbotron {
+	background-image: url('../images/home-page-background.jpg');
+	background-size: cover;
+	background-repeat: none;
 }
 
 .search-bar {
@@ -20,4 +19,16 @@
 .logo {
 	margin-top: 40px;
 	width: 250px;
+}
+
+.main-search {
+	margin-left: 50px;
+}
+
+.search-btn {
+	background-color: orange;
+}
+
+#livesearch {
+	left: -15px;
 }

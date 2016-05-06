@@ -1,0 +1,19 @@
+#movies {
+	margin: 20px;
+}
+
+img.poster{
+	max-width: 336px;
+
+	margin: 10px;
+}
+
+.media-body {
+	margin: 30px;
+}
+
+footer {
+	position: block;
+}
+
+
