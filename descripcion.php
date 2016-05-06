@@ -46,47 +46,65 @@
 	<div class="container">
 		<div class="media">
 			<div id="movies">
-				<div class="media-left media-top poster" ><a href="#">
-					<?php echo '<img class="media-object poster" src="'.$_SESSION['link_imagen'].'" alt="Poster">'; ?>
-				</a></div>
-				<div class="media-body">
-					<h3 class="media-heading"><?php echo $_SESSION['nombre'] ?></h3>
-					<div id="info" class="container">
-						<h4>Director</h4>
-						<p><?php echo $_SESSION['director'] ?></p>
-						<h4>Categoria</h4>
-						<p><?php echo $_SESSION['categoria'] ?></p>
-						<h4>Genero</h4>
-						<p><?php echo $_SESSION['genero'] ?></p>
-						<h4>Duracion</h4>
-						<p><?php echo $_SESSION['duracion'] ?></p>
-						<h4>Precio</h4>
-						<p><?php echo $_SESSION['precio'] ?></p>
+				<div class="panel">
+					<div class="row">
+						<div class="col-lg-3 col-lg-offset-1">
+							<?php echo '<img class="img-rounded poster" src="'.$_SESSION['link_imagen'].'" alt="Poster">'; ?>		
+						</div>
+						<div class="col-lg-8">
+							<h1><?php echo $_SESSION['nombre'] ?></h1>
+							<div class="row">
+								<div class="col-lg-2">
+									<h3>Director</h3>
+									<p><?php echo $_SESSION['director'] ?></p>	
+								</div>
+								<div class="col-lg-2">
+									<h3>Categoria</h3>
+									<p><?php echo $_SESSION['categoria'] ?></p>	
+								</div>
+								<div class="col-lg-2">
+									<h3>Genero</h3>
+									<p><?php echo $_SESSION['genero'] ?></p>	
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2">
+									<h3>Duración</h3>
+									<p><?php echo $_SESSION['duracion'] ?></p>	
+								</div>
+								<div class="col-lg-2 col-lg-offset-4">
+									<h2>Precio
+									<?php echo $_SESSION['precio'] ?>BsF
+									</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-offset-6 col-lg-2">
+									<a href="descripcion.php?pelicula='.$row['ID_pelicula'].'"><button type="button" class="btn btn-default" value="'.$row['ID_pelicula'].'" aria-label="Left Align">
+  									<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar
+								</button></a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<a href="descripcion.php?pelicula='.$row['ID_pelicula'].'"><button type="button" class="btn btn-default" value="'.$row['ID_pelicula'].'" aria-label="Left Align">
-  							<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar
-						</button></a>
-					<p class="descripcion"><?php echo $_SESSION['descripcion'] ?></p>
+				</div>
+				<div class="panel">
+					<div class="row">
+						<div class="col-lg-4 col-lg-offset-1">
+							<h1>Sinopsis</h1>
+							<p class="descripcion"><?php echo $_SESSION['descripcion']?></p>
+						</div>
+						<div class="col-lg-6">
+							<div class="embed-responsive embed-responsive-4by3">
+							<?php echo '<iframe class="embed-responsive-item" src="'.$_SESSION['link_video'].'"></iframe>'; ?>
+							</div>		
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>	
 	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-					
-			</div>
-			<div class="col-lg-6">
-				<div class="embed-responsive embed-responsive-4by3">
-					<?php echo '<iframe class="embed-responsive-item" src="'.$_SESSION['link_video'].'"></iframe>'; ?>
-				</div>		
-			</div>
-		</div>
-		
-		<div class="page-header">
-			<h1>Comentarios</h1>
-		</div>
-	</div>
+	
 
 <footer>
 	<?php 
