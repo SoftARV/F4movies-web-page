@@ -36,8 +36,7 @@
 
 	<div class="row">			
 		
-		<div class="col-md-10 col-md-offset-1 panel">
-			<div class="movie-list">
+		<div class="col-md-10 col-md-offset-1">
 			<?php
 				if (isset($_GET['keywords'])) {
 				 	movies($_GET['keywords']);
@@ -45,7 +44,6 @@
 				 	movies('');
 				 }
 			?>
-			</div>
 		</div>
 	</div>
 </div>
