@@ -31,7 +31,7 @@ $result = $conn->query($consulta);
 	                				<p>'.$row["precio"].'</p>
 	                			</div>
 	                			<div class="col-md-2 remove-movie">
-	                				<button type="button" class="delcar" value="'.$row["ID_pelicula"].'" onclick="delCar(this)"><img src="images/delete_sign.png" alt=""></button>
+	                				<a class="delcar" value="'.$row["ID_pelicula"].'" onclick="delCar(this)"><img src="images/delete_sign.png" alt="Delete"></a>
 	                			</div>
 	                		</div>
 	                	</li>

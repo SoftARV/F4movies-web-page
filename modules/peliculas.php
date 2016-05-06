@@ -26,7 +26,7 @@
 					<div class="description text-center">
 						<h3 class="media-heading movie-title"><a href="descripcion.php?pelicula='.$row['ID_pelicula'].'">'.$row['nombre'].'</a></h3>
 						<p class="precio">'.$row['precio'].' BsF</p>
-						<button type="button" class="btn btn-default" value="'.$row['ID_pelicula'].'" aria-label="Left Align" " onclick="addCar(this)">
+						<button type="button" class="btn btn-md comprar" value="'.$row['ID_pelicula'].'" aria-label="Left Align" " onclick="addCar(this)">
   							<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar
 						</button>
 					</div>
