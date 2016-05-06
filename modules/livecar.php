@@ -15,7 +15,9 @@ $result = $conn->query($consulta);
   
     while($row = $result->fetch_assoc()) 
     {
-    	echo '<li>
+
+
+    	echo '<li class="delLiveCar">
 	                		<div class="row">
 	                			<div class="col-md-2 poster-movie">
 	                				<img src="'.$row["link_imagen"].'" width="60" alt="">
@@ -25,7 +27,7 @@ $result = $conn->query($consulta);
 	                				<p>'.$row["precio"].'</p>
 	                			</div>
 	                			<div class="col-md-2 remove-movie">
-	                				<a href=""><img src="images/delete_sign.png" alt=""></a>
+	                				<button type="button" class="delcar" onclick="delCar(this)"><img src="images/delete_sign.png" alt=""></button>
 	                			</div>
 	                		</div>
 	                	</li>
