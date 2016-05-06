@@ -253,6 +253,7 @@ function Menu(){
 	<div class="modal fade" id="modal-car" tabindex="-1" role="dialog" aria-labelledby="modal-cart-label" aria-hidden="true">
        	<div class="modal-dialog">
         	<div class="modal-content">
+
         		<div class="modal-header">
         			<button type="button" class="close" data-dismiss="modal">
         				<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
@@ -265,16 +266,8 @@ function Menu(){
 	                '.$carrito.'
 	                </ul>
         		</div>
-
         		<div class="modal-footer">
-        			<button type="button" class="btn btn-primary checkout" onclick="checkCar()>Finalizar Compra</button>
-        		</div>
-
-        	</div>
-       	</div>
-    </div>
-      			<div class="modal-footer">
-        			<button type="button" class="btn btn-primary checkout">Finalizar Compra</button>
+        			<button type="button" class="btn btn-primary checkout"  onclick="checkCar()">Finalizar Compra</button>
         		</div>
 
         	</div>
