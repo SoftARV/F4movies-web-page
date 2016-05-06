@@ -16,7 +16,7 @@ $database = "venta";
 
 $conn = new mysqli($server, $username, $password,$database);
 
-$login= 'SELECT correo,pass,perfil from usuario where correo="'.$correo.'"';
+$login= 'SELECT correo,pass,perfil,nickname from usuario where correo="'.$correo.'"';
 
 $result = $conn->query($login);
 
@@ -30,7 +30,7 @@ if ($result->num_rows > 0)
         	{
         		$_SESSION["usuario"] = $correo;
                 $_SESSION["perfil"] = $row['perfil'];
-
+                $_SESSION["name"]  = $row['nickname'];
         		die(header("location: ../index.php?loginFailed=false")); 
 
         		header("Location: ../index.php"); 
