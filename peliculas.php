@@ -60,7 +60,7 @@
 		
 		<div class="col-lg-10" style="color: white;">
 			<?php 
-				movies();
+				movies($_GET['keywords']);
 			?>
 			</div>
 		</div>

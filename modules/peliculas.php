@@ -1,5 +1,5 @@
 <?php 
-	function movies(){
+	function movies($keywords){
 		$server   = "localhost";
 		$username = "root";
 		$password = "";
@@ -7,7 +7,15 @@
 
 
 		$conn = new mysqli($server, $username, $password,$database);
-		$listadoPeliculas = 'SELECT ID_pelicula,nombre,link_imagen,precio FROM pelicula';
+		
+		$listadoPeliculas = '';
+
+		if (strlen($keywords) > 0) {
+			$listadoPeliculas = 'SELECT ID_pelicula, nombre, link_imagen, precio from pelicula where nombre like "'.$keywords.'%"';
+		} else {
+			$listadoPeliculas = 'SELECT ID_pelicula,nombre,link_imagen,precio FROM pelicula';
+		}
+		
 		$result = $conn->query($listadoPeliculas);
 		 while($row = $result->fetch_assoc()) 
     	{	
