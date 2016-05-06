@@ -209,9 +209,8 @@ function Menu(){
 	                '.$carrito.'
 	                </ul>
         		</div>
-
         		<div class="modal-footer">
-        			<button type="button" class="btn btn-primary checkout">Finalizar Compra</button>
+        			<button type="button" class="btn btn-primary checkout"  onclick="checkCar()">Finalizar Compra</button>
         		</div>
 
         	</div>
@@ -268,7 +267,7 @@ function Menu(){
         		</div>
 
         		<div class="modal-footer">
-        			<button type="button" class="btn btn-primary checkout">Finalizar Compra</button>
+        			<button type="button" class="btn btn-primary checkout" onclick="checkCar()>Finalizar Compra</button>
         		</div>
 
         	</div>
@@ -304,7 +303,9 @@ function imports() {
 	return '<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-    <script type="text/javascript" src="js/login_scripts.js"></script>';
+    <script type="text/javascript" src="js/login_scripts.js"></script>
+    <script type="text/javascript" src="js/livecar.js"></script>';
+   
 }
 
 function login(){

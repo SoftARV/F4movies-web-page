@@ -21,16 +21,35 @@
 				</div>
 			</div>
 			<div class="row movie-list">
-				<div class="col-md-3 poster-movie text-center">
-	                <img src="http://ia.media-imdb.com/images/M/MV5BMjQyMzgzNTYzNF5BMl5BanBnXkFtZTgwNjA5OTQ3ODE@._V1_UX182_CR0,0,182,268_AL_.jpg" width="60" alt="">
-	            </div>
-	            <div class="col-md-8 description-movie">
-	                <h2>Titulo Pelicula</h2>
-	                <h4>Precio...</h4>
-	            </div>
-	            <div class="col-md-1 remove-movie text-right">
-	                <a href=""><img src="images/delete_sign.png" alt=""></a>
-	            </div>
+				<?php
+				$carrito="";
+				for ($i=1; $i<10 ; $i++) 
+				{
+					if (isset($_SESSION["nombre[".$i."]"]))
+					{
+							$carrito= $carrito.'
+							<li class="delLiveCar">
+	                		<div class="row">
+	                			<div class="col-md-2 poster-movie">
+	                				<img src="'.$_SESSION["link[".$i."]"].'" width="60" alt="">
+	                					</div>
+	                					<div class="col-md-8 description-movie">
+	                						<h2>'.$_SESSION["nombre[".$i."]"].'</h2>
+	                						<p>'.$_SESSION["precio[".$i."]"].'</p>
+	                					</div>
+	                					<div class="col-md-2 remove-movie">
+	                							<button type="button" class="delcar" value="'.$_SESSION["id[".$i."]"].'" onclick="delCar(this)"><img src="images/delete_sign.png" 	alt=""></button>
+	                					</div>
+	                		</div>
+	                		</li>
+	                				';
+	                	
+						}
+
+
+				}
+				 echo $carrito; 
+				?>
 			</div>
 			<div class="row text-right checkout-footer">
 				<div class="col-md-8">
