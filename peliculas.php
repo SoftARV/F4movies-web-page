@@ -73,6 +73,7 @@
 </footer>
 <?php echo imports(); ?>
 <script type="text/javascript" src="js/livesearch.js"></script>
+<script type="text/javascript" src="js/livecar.js"></script>
 <script type="text/javascript" src="js/switch_view.js"></script>
 </body>
 </html>
