@@ -23,10 +23,10 @@
 			<div class="col-lg-2">
 				<div>
 					<div class="list-group">
-						  <a href="#" class="list-group-item disabled">Categorias</a>
-						  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-						  <a href="#" class="list-group-item">Morbi leo risus</a>
-						  <a href="#" class="list-group-item disabled">Genero</a>
+						  <a class="list-group-item disabled">Usuario</a>
+						  <a href="#" class="list-group-item">Carrito</a>
+						  <a href="#" class="list-group-item">Compras realizadas</a>
+						  <a class="list-group-item disabled">Genero</a>
 						  <a href="#" class="list-group-item">Vestibulum at eros</a>
 					</div>
 				</div>
