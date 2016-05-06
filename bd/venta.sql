@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 30, 2016 at 11:34 PM
+-- Generation Time: May 06, 2016 at 05:43 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -55,7 +55,7 @@ CREATE TABLE `desc` (
 
 CREATE TABLE `orden` (
   `ID_compra` int(11) NOT NULL,
-  `cedula` int(9) NOT NULL
+  `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -88,38 +88,6 @@ INSERT INTO `pelicula` (`ID_pelicula`, `nombre`, `categoria`, `genero`, `censura
 (1, 'pelicula1', 'categoria1', 'genero1', 'censura1', '01:00:00', 'descripcion1', 'n/a', 'n/a', 'n/a', 'director1', 1, 1),
 (2, 'pelicula2', 'categoria2', 'genero2', 'censura2', '01:00:00', 'descripcion2', 'n/a', 'n/a', 'n/a', 'director2', 2, 1),
 (3, 'pelicula3', 'categoria3', 'genero3', 'censura3', '01:00:00', 'descripcion2', 'n/a', 'n/a', 'n/a', 'director3', 3, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `perfil`
---
-
-CREATE TABLE `perfil` (
-  `ID_perfil` tinyint(4) NOT NULL,
-  `Visualizar_1` tinyint(4) NOT NULL,
-  `Cometar` tinyint(4) NOT NULL,
-  `Calificar` tinyint(4) NOT NULL,
-  `Comprar` tinyint(4) NOT NULL,
-  `Visualizar_2` tinyint(4) NOT NULL,
-  `Visualizar_3` tinyint(4) NOT NULL,
-  `Cometar_2` tinyint(4) NOT NULL,
-  `Comprar_2` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `rating`
---
-
-CREATE TABLE `rating` (
-  `ID_pelicula` int(11) NOT NULL,
-  `cedula` int(9) NOT NULL,
-  `calificacion` tinyint(4) NOT NULL,
-  `puntuacion` tinyint(4) NOT NULL,
-  `comentario` varchar(140) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -165,12 +133,6 @@ ALTER TABLE `pelicula`
   ADD PRIMARY KEY (`ID_pelicula`);
 
 --
--- Indexes for table `perfil`
---
-ALTER TABLE `perfil`
-  ADD PRIMARY KEY (`ID_perfil`);
-
---
 -- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
@@ -190,11 +152,6 @@ ALTER TABLE `compra`
 --
 ALTER TABLE `pelicula`
   MODIFY `ID_pelicula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
--- AUTO_INCREMENT for table `perfil`
---
-ALTER TABLE `perfil`
-  MODIFY `ID_perfil` tinyint(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `usuario`
 --
