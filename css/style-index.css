@@ -3,6 +3,9 @@
 	color: white;
 }
 
+.row{
+    margin-right: 0px !important;
+}
 .jumbotron {
 	background-image: url('../images/home-page-background.jpg');
 	background-size: cover;

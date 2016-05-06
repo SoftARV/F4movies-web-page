@@ -1,10 +1,26 @@
+body{
+	min-height: 100%;
+  position:relative;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+h3 {
+    font-size: 1.875em;
+}
+p{
+	font-size: 1.25em;	
+}
+
 #movies {
 	margin: 20px;
 }
 
 img.poster{
-	max-width: 336px;
-
+	max-width: 240px;
 	margin: 10px;
 }
 
@@ -12,8 +28,20 @@ img.poster{
 	margin: 30px;
 }
 
-footer {
-	position: block;
+.row{
+  	margin-top: 30px;
+  	margin-bottom: 30px
 }
 
+div.panel{
+	background-color: #2D54AD;	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+footer {
+   	bottom: -50px;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}

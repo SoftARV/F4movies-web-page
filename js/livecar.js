@@ -1,4 +1,6 @@
+
 function addCar(str) {
+
         var str=str.value;
         if (window.XMLHttpRequest) 
         {
@@ -15,13 +17,13 @@ function addCar(str) {
         xmlhttp.send();
     }
 
-   
 
     function delCar(str)
     { 
         parent = str.parentNode.parentNode.parentNode;
         parent.remove();
     }
+
 
 
 

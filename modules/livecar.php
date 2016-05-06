@@ -16,6 +16,7 @@ $result = $conn->query($consulta);
     while($row = $result->fetch_assoc()) 
     {
 
+
     	echo '<li class="delLiveCar">
 	                		<div class="row">
 	                			<div class="col-md-2 poster-movie">
