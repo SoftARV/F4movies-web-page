@@ -12,6 +12,7 @@ function pelicula($id_pelicula){
 	$result = $conn->query($pelicula);
 		while($row = $result->fetch_assoc()) 
     	{
+            $_SESSION['ID_pelicula']    = $row['ID_pelicula'];
     		$_SESSION['nombre'] 		= $row['nombre'];
     		$_SESSION['categoria'] 		= $row['categoria'];
     		$_SESSION['genero'] 		= $row['genero'];

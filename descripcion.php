@@ -70,7 +70,7 @@
 							<div class="row">
 								<div class="col-lg-2">
 									<h3>Duración</h3>
-									<p><?php echo $_SESSION['duracion'] ?></p>	
+									<p><?php echo $_SESSION['duracion'] ?> </p>	
 								</div>
 								<div class="col-lg-2 col-lg-offset-4">
 									<h2>Precio
@@ -80,10 +80,9 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-offset-6 col-lg-2">
-									<a href="descripcion.php?pelicula='.$row['ID_pelicula'].'"><button type="button" class="btn btn-default" value="'.$row['ID_pelicula'].'" aria-label="Left Align">
-  									<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar
-								</button></a>
-								</div>
+									<button type="button" class="btn btn-default" value="<?php echo $_SESSION['ID_pelicula'];?>" aria-label="Left Align" 
+									onclick="addCar(this)">
+  									<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar</button>
 							</div>
 						</div>
 					</div>
