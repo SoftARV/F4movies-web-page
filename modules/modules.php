@@ -13,6 +13,32 @@ function Head($Titulo){
 }	
 
 function Menu(){
+	$carrito="";
+	for ($i=1; $i<10 ; $i++) 
+	{
+		if (isset($_SESSION["nombre[".$i."]"]))
+			{
+				$carrito= $carrito.'
+				<li class="delLiveCar">
+	                		<div class="row">
+	                			<div class="col-md-2 poster-movie">
+	                				<img src="'.$_SESSION["link[".$i."]"].'" width="60" alt="">
+	                			</div>
+	                			<div class="col-md-8 description-movie">
+	                				<h2>'.$_SESSION["nombre[".$i."]"].'</h2>
+	                				<p>'.$_SESSION["precio[".$i."]"].'</p>
+	                			</div>
+	                			<div class="col-md-2 remove-movie">
+	                				<button type="button" class="delcar" value="'.$_SESSION["id[".$i."]"].'" onclick="delCar(this)"><img src="images/delete_sign.png" alt=""></button>
+	                			</div>
+	                		</div>
+	                	</li>
+	                	';
+	                	
+			}
+
+	} 
+
 	if (!isset($_SESSION["usuario"]))	
 	{
 	return '<!-- Navigation -->
@@ -180,6 +206,7 @@ function Menu(){
 
         		<div class="modal-body">
 	                <ul id="addLiveCar">
+	                '.$carrito.'
 	                </ul>
         		</div>
 
