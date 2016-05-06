@@ -42,6 +42,27 @@ function addCar(str) {
 
     }
 
+    function checkCar()
+    { 
+
+        if (window.XMLHttpRequest) 
+        {
+            xmlhttp=new XMLHttpRequest();
+        }
+        xmlhttp.onreadystatechange=function() 
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200) 
+            {
+                document.getElementById("addLiveCar").innerHTML=xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET","modules/checkCar.php",true);
+        xmlhttp.send();
+
+    }
+
+
+
 
 
 
