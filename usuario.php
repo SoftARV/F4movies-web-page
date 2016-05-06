@@ -21,8 +21,14 @@
 
 	<div class="container">
 		<div class="jumbotron">
-		  <h1 style="color: white;">Bienvenido Usuario!</h1>
-		  <p>Datos del usuario</p>
+		  <h1 style="color: white;">Bienvenido 
+			<?php
+				echo $_SESSION['name']; 
+			?>!</h1>
+		  <p style="color: white;"><?php
+		  	if ($_SESSION['perfil']==2) echo "Administrador";
+		   	else echo "Usuario";
+		   ?></p>
 		</div>
 		<div class="row">	
 		<?php 
@@ -32,13 +38,13 @@
 				<div>
 					<div class="list-group">
 						  <a class="list-group-item disabled">Usuario</a>
-						  <a href="#" class="list-group-item">Carrito</a>
+						  <a href="usuario.php" class="list-group-item active">Carrito</a>
 						  <a href="#" class="list-group-item">Compras realizadas</a>
 						  <?php 
 						  	if ($_SESSION['perfil'] == 2) {
 						  		echo '<a class="list-group-item disabled">Panel administrativo</a>
 						  		<a href="#" class="list-group-item">Reporte de usuarios</a>
-						  		<a href="#" class="list-group-item">Agregar peliculas</a>
+						  		<a href="addmovie.php" class="list-group-item">Agregar peliculas</a>
 						  		<a href="#" class="list-group-item">Modificar peliculas</a>';
 						  	}
 						   ?>
