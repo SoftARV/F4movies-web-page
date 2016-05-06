@@ -179,21 +179,7 @@ function Menu(){
         		</div>
 
         		<div class="modal-body">
-	                <ul>
-	                	<li>
-	                		<div class="row">
-	                			<div class="col-md-2 poster-movie">
-	                				<img src="http://ia.media-imdb.com/images/M/MV5BMjQyMzgzNTYzNF5BMl5BanBnXkFtZTgwNjA5OTQ3ODE@._V1_UX182_CR0,0,182,268_AL_.jpg" width="60" alt="">
-	                			</div>
-	                			<div class="col-md-8 description-movie">
-	                				<h2>Titulo Pelicula</h2>
-	                				<p>Precio...</p>
-	                			</div>
-	                			<div class="col-md-2 remove-movie">
-	                				<a href=""><img src="images/delete_sign.png" alt=""></a>
-	                			</div>
-	                		</div>
-	                	</li>
+	                <ul id="livecar">
 	                </ul>
         		</div>
 
@@ -229,7 +215,7 @@ function Menu(){
 		                <li><a href="contacto.php">Contactanos</a></li>
 		            </ul>
 		            <ul class="nav navbar-nav navbar-right">
-		            	<li><a href="#">'.$_SESSION["usuario"].'</a></li>
+		            	<li><a href="usuario.php">'.$_SESSION["usuario"].'</a></li>
 						<li><a class="launch-modal" data-modal-id="modal-car"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></a></li>
 		            	<li><a href="modules/logout.php">Cerrar sesion</a></li>
 		            </ul>

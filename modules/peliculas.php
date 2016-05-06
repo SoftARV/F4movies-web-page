@@ -18,9 +18,9 @@
 					<div class="description">
 						<h3 class="media-heading movie-title">'.$row['nombre'].'</h3>
 						<p>'.$row['precio'].' BsF</p>
-						<a href="descripcion.php?pelicula='.$row['ID_pelicula'].'"><button type="button" class="btn btn-default" value="'.$row['ID_pelicula'].'" aria-label="Left Align">
+						<button type="button" class="btn btn-default" value="'.$row['ID_pelicula'].'" aria-label="Left Align" class="car">
   							<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar
-						</button></a>
+						</button>
 					</div>
 				</div>';
     	}

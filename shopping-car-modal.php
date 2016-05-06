@@ -23,7 +23,7 @@
         		</div>
 
         		<div class="modal-body">
-	                <ul>
+	                <ul id="livecar">
 	                	<li>
 	                		<div class="row">
 	                			<div class="col-md-2 poster-movie">
@@ -48,7 +48,6 @@
         	</div>
        	</div>
     </div>
-
 	<?php echo imports(); ?>
 </body>
 </html>
