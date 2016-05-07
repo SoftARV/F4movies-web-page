@@ -32,9 +32,8 @@ if ($result->num_rows > 0)
                 $_SESSION["id"] = $row['id'];
                 $_SESSION["perfil"] = $row['perfil'];
                 $_SESSION["name"]  = $row['nickname'];
-        		die(header("location: ../index.php?loginFailed=false")); 
-
-        		header("Location: ../index.php"); 
+        		die(header("location: ../index.php?loginFailed=false"));
+                 
 
         	}
         	else

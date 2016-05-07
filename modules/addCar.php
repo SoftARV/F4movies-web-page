@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 $str=$_GET["str"];

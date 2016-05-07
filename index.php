@@ -21,7 +21,7 @@
 				<div class="col-lg-4 col-lg-offset-4" >
 					<?php 
 						echo login(); 
-						echo registro(); 
+						echo registro();
 					?>
 				</div>
 			</div>
