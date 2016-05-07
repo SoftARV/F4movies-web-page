@@ -26,14 +26,12 @@
 				<div>
 					<div class="list-group">
 						  <a class="list-group-item disabled">Usuario</a>
-						  <a href="usuario.php" class="list-group-item">Carrito</a>
-						  <a href="#" class="list-group-item">Compras realizadas</a>
+						  <a href="usuario.php" class="list-group-item">Compras realizadas</a>
 						  <?php 
 						  	if ($_SESSION['perfil'] == 2) {
 						  		echo '<a class="list-group-item disabled">Panel administrativo</a>
-						  		<a href="#" class="list-group-item">Reporte de usuarios</a>
-						  		<a href="addmovie.php" class="list-group-item active">Agregar peliculas</a>
-						  		<a href="#" class="list-group-item">Modificar peliculas</a>';
+						  		<a href="reporte.php" class="list-group-item">Reporte de usuarios</a>
+						  		<a href="addmovie.php" class="list-group-item active">Agregar peliculas</a>';
 						  	}
 						   ?>
 						  
