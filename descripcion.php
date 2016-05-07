@@ -17,8 +17,9 @@
 		echo Menu();
 		pelicula($id_pelicula);
 	?>
+	<div class="container">
 	<div class="row search-bar">
-		<div class="col-lg-9 col-lg-offset-2">
+		<div class="col-lg-8 col-lg-offset-2">
 			<div class="input-group">
 				<div class="input-group-btn">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buscar<span class="caret"></span></button>
@@ -43,11 +44,12 @@
 			</div><!-- /input-group -->
 		</div><!-- /.col-lg-6 -->		
 	</div>
+	</div>
 	<div class="container">
 		<div class="media">
 			<div id="movies">
 				<div class="panel">
-					<div class="row">
+					<div class="row ">
 						<div class="col-lg-3 col-lg-offset-1">
 							<?php echo '<img class="img-rounded poster" src="'.$_SESSION['link_imagen'].'" alt="Poster">'; ?>		
 						</div>
@@ -80,12 +82,12 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-offset-6 col-lg-2">
-									<button type="button" class="btn btn-default" value="<?php echo $_SESSION['ID_pelicula'];?>" aria-label="Left Align" 
-									onclick="addCar(this)">
+									<button type="button" class="btn btn-md comprar" value="<?php echo $_SESSION['ID_pelicula'];?>" aria-label="Left Align" onclick="addCar(this)">
   									<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar</button>
 							</div>
 						</div>
 					</div>
+				</div>
 				</div>
 				<div class="panel">
 					<div class="row">
@@ -100,7 +102,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			
 		</div>	
 	</div>
 	
