@@ -82,8 +82,7 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-offset-6 col-lg-2">
-									<button type="button" class="btn btn-default" value="<?php echo $_SESSION['ID_pelicula'];?>" aria-label="Left Align" 
-									onclick="addCar(this)">
+									<button type="button" class="btn btn-md comprar" value="<?php echo $_SESSION['ID_pelicula'];?>" aria-label="Left Align" onclick="addCar(this)">
   									<span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Comprar</button>
 							</div>
 						</div>
