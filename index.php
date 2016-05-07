@@ -27,11 +27,11 @@
 			<div class="row main-search">
 				<div class="col-md-8 col-sm-8">
 					<h1>Bienvenido a F4movies</h1>
-					<form action="" class="form-horizontal search">
+					<form action="peliculas.php" method="GET" class="form-horizontal search">
 						<div class="form-group form-group-lg input-group">
-							<input type="text" id="search" class="form-control" placeholder="Buscar Pelicula...">
+							<input type="text" id="search" class="form-control" name="keywords" placeholder="Buscar Pelicula...">
 							<div class="input-group-btn">
-								<button class="btn btn-lg search-btn"><span class="glyphicon glyphicon-search"></span></button>
+								<button class="btn btn-lg search-btn" type="submit"><span class="glyphicon glyphicon-search"></span></button>
 							</div>
 						</div>
 						<div id="livesearch"></div>

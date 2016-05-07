@@ -13,6 +13,32 @@ function Head($Titulo){
 }	
 
 function Menu(){
+	$carrito="";
+	for ($i=1; $i<10 ; $i++) 
+	{
+		if (isset($_SESSION["nombre[".$i."]"]))
+			{
+				$carrito= $carrito.'
+				<li class="delLiveCar">
+	                		<div class="row">
+	                			<div class="col-md-2 poster-movie">
+	                				<img src="'.$_SESSION["link[".$i."]"].'" width="60" alt="">
+	                			</div>
+	                			<div class="col-md-8 description-movie">
+	                				<h2>'.$_SESSION["nombre[".$i."]"].'</h2>
+	                				<p>'.$_SESSION["precio[".$i."]"].'</p>
+	                			</div>
+	                			<div class="col-md-2 remove-movie">
+	                				<button type="button" class="delcar" value="'.$_SESSION["id[".$i."]"].'" onclick="delCar(this)"><img src="images/delete_sign.png" alt=""></button>
+	                			</div>
+	                		</div>
+	                	</li>
+	                	';
+	                	
+			}
+
+	} 
+
 	if (!isset($_SESSION["usuario"]))	
 	{
 	return '<!-- Navigation -->
@@ -179,12 +205,12 @@ function Menu(){
         		</div>
 
         		<div class="modal-body">
-	                <ul id="livecar">
+	                <ul id="addLiveCar">
+	                '.$carrito.'
 	                </ul>
         		</div>
-
         		<div class="modal-footer">
-        			<button type="button" class="btn btn-primary checkout">Finalizar Compra</button>
+        			<button type="button" class="btn btn-primary checkout"  onclick="checkCar()">Finalizar Compra</button>
         		</div>
 
         	</div>
@@ -236,26 +262,12 @@ function Menu(){
         		</div>
 
         		<div class="modal-body">
-	                <ul>
-	                	<li>
-	                		<div class="row">
-	                			<div class="col-md-2 poster-movie">
-	                				<img src="http://ia.media-imdb.com/images/M/MV5BMjQyMzgzNTYzNF5BMl5BanBnXkFtZTgwNjA5OTQ3ODE@._V1_UX182_CR0,0,182,268_AL_.jpg" width="60" alt="">
-	                			</div>
-	                			<div class="col-md-8 description-movie">
-	                				<h2>Titulo Pelicula</h2>
-	                				<p>Precio...</p>
-	                			</div>
-	                			<div class="col-md-2 remove-movie">
-	                				<a href=""><img src="images/delete_sign.png" alt=""></a>
-	                			</div>
-	                		</div>
-	                	</li>
+	                <ul id="addLiveCar">
+	                '.$carrito.'
 	                </ul>
         		</div>
-
         		<div class="modal-footer">
-        			<button type="button" class="btn btn-primary checkout">Finalizar Compra</button>
+        			<button type="button" class="btn btn-primary checkout"  onclick="checkCar()">Finalizar Compra</button>
         		</div>
 
         	</div>
@@ -284,7 +296,9 @@ function imports() {
 	return '<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-    <script type="text/javascript" src="js/login_scripts.js"></script>';
+    <script type="text/javascript" src="js/login_scripts.js"></script>
+    <script type="text/javascript" src="js/livecar.js"></script>';
+   
 }
 
 function login(){

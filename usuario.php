@@ -1,6 +1,11 @@
 <?php 
-		include("modules/modules.php");
 		session_start();
+		if (!isset($_SESSION["usuario"]))	
+			{
+				die(header("location: index.php"));
+			}else{
+				include("modules/modules.php");
+			}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,18 +21,34 @@
 
 	<div class="container">
 		<div class="jumbotron">
-		  <h1>Bienvenido Usuario!</h1>
-		  <p>Datos del usuario</p>
+		  <h1 style="color: white;">Bienvenido 
+			<?php
+				echo $_SESSION['name']; 
+			?>!</h1>
+		  <p style="color: white;"><?php
+		  	if ($_SESSION['perfil']==2) echo "Administrador";
+		   	else echo "Usuario";
+		   ?></p>
 		</div>
-		<div class="row">			
+		<div class="row">	
+		<?php 
+			
+		 ?>		
 			<div class="col-lg-2">
 				<div>
 					<div class="list-group">
-						  <a href="#" class="list-group-item disabled">Categorias</a>
-						  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-						  <a href="#" class="list-group-item">Morbi leo risus</a>
-						  <a href="#" class="list-group-item disabled">Genero</a>
-						  <a href="#" class="list-group-item">Vestibulum at eros</a>
+						  <a class="list-group-item disabled">Usuario</a>
+						  <a href="usuario.php" class="list-group-item active">Carrito</a>
+						  <a href="#" class="list-group-item">Compras realizadas</a>
+						  <?php 
+						  	if ($_SESSION['perfil'] == 2) {
+						  		echo '<a class="list-group-item disabled">Panel administrativo</a>
+						  		<a href="#" class="list-group-item">Reporte de usuarios</a>
+						  		<a href="addmovie.php" class="list-group-item">Agregar peliculas</a>
+						  		<a href="#" class="list-group-item">Modificar peliculas</a>';
+						  	}
+						   ?>
+						  
 					</div>
 				</div>
 			</div>

@@ -3,6 +3,9 @@
 	color: white;
 }
 
+.row{
+    margin-right: 0px !important;
+}
 .jumbotron {
 	background-image: url('../images/home-page-background.jpg');
 	background-size: cover;
@@ -22,8 +25,10 @@
 	margin-left: 50px;
 }
 
-.search-btn {
+.search-btn, .search-btn:visited {
 	background-color: orange;
+	text-decoration: none;
+	color: black;
 }
 
 #livesearch {
