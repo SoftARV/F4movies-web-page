@@ -46,8 +46,10 @@ body {
     z-index: 1030;
 }
 
-#livesearch > p {
+#livesearch p, #livesearch p:visited {
     margin: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .hidden-item {

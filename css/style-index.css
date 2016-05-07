@@ -13,11 +13,11 @@
 }
 
 .search-bar {
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 .logo {
-	margin-top: 40px;
+	margin-top: 30px;
 	width: 250px;
 }
 
@@ -33,4 +33,11 @@
 
 #livesearch {
 	left: -15px;
+}
+
+.movie-carousel-poster {
+	background-color: #2D60B6;
+	margin-left: auto;
+	margin-right: auto;
+	width: 170px;
 }

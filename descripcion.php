@@ -19,29 +19,19 @@
 	?>
 	<div class="container">
 	<div class="row search-bar">
-		<div class="col-lg-8 col-lg-offset-2">
-			<div class="input-group">
-				<div class="input-group-btn">
-					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buscar<span class="caret"></span></button>
-					<ul class="dropdown-menu">
-						<li><a href="#">Todos</a></li>
-						<li><a href="#">Genero</a></li>
-						<li><a href="#">Otros</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</div><!-- /btn-group -->
-				<input type="text" class="form-control" aria-label="..." id="search">
+		<div class="col-lg-8 col-lg-offset-2 search">
+			
+			<form action="peliculas.php" method="GET" class="form-horizontal search">
+				<div class="form-group form-group-lg input-group">
+					<input type="text" class="form-control" name="keywords"  aria-label="Buscar Pelicula" placeholder="Buscar Pelicula..." id="search">
+					<div class="input-group-btn">
+						<button type="submit" class="btn btn-lg" aria-expanded="false">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</div>
+				</div><!-- /input-group -->
 				<div id="livesearch"></div>
-				<div class="input-group-btn">
-					<button type="button" class="btn btn-default" aria-label="Grid View">
-						<span class="glyphicon glyphicon glyphicon-th" id="grid-view" aria-hidden="true"></span>
-					</button>
-					<button type="button" class="btn btn-default" aria-label="List View">
-						<span class="glyphicon glyphicon glyphicon-th-list" id="list-view" aria-hidden="true"></span>
-					</button>
-				</div>
-			</div><!-- /input-group -->
+			</form>
 		</div><!-- /.col-lg-6 -->		
 	</div>
 	</div>
