@@ -8,35 +8,25 @@ $password = "";
 $database= "venta";
 $conn = new mysqli($server, $username, $password,$database);
 
-$id_compra=rand(10,99);
+$id_compra=$_SESSION["id"].rand(10,99);
 
 $total=0;
+
+for ($i=1; $i<10 ; $i++) 
+	{
+		if (isset($_SESSION["id[".$i."]"]))
+			{
+				$descrip= 'INSERT into descrip values(1,'.$_SESSION["id[".$i."]"].','.$id_compra.')';
+				$conn->query($descrip);
+				$total+=$_SESSION["precio[".$i."]"];
+			}
+	}
 
 $compra= 'INSERT into compra values('.$id_compra.',curdate(),"pendiente","pendiente","pendiente",'.$total.')';
 $orden= 'INSERT into orden values('.$id_compra.','.$_SESSION["id"].')';
 
-for ($i=1; $i<10 ; $i++) 
-	{
-		if (isset($_SESSION["nombre[".$i."]"]))
-			{
-				$desc= 'INSERT into desc values(1,'.$_SESSION["id[".$i."]"].','.$id_compra.')';
-				if ($conn->query($desc) === TRUE) 
-				{
-					
-				}
-			}
-	}
-
-if ($conn->query($compra) === TRUE && $conn->query($orden) === TRUE) 
-{
-    //compra registrada
-} 
-else 
-{
-    // compra fallida
-}
-
-
+$conn->query($compra); 
+$conn->query($orden);
 
 for ($i=1; $i<10 ; $i++) 
 	{
