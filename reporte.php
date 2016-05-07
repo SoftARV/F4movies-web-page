@@ -38,11 +38,11 @@
 				<div>
 					<div class="list-group">
 						  <a class="list-group-item disabled">Usuario</a>
-						  <a href="usuario.php" class="list-group-item active">Compras realizadas</a>
+						  <a href="usuario.php" class="list-group-item">Compras realizadas</a>
 						  <?php 
 						  	if ($_SESSION['perfil'] == 2) {
 						  		echo '<a class="list-group-item disabled">Panel administrativo</a>
-						  		<a href="reporte.php" class="list-group-item">Reporte de usuarios</a>
+						  		<a href="reporte.php" class="list-group-item active">Reporte de usuarios</a>
 						  		<a href="addmovie.php" class="list-group-item">Agregar peliculas</a>';
 						  	}
 						   ?>
@@ -58,7 +58,7 @@
 					<div class="panel-body">
 						<?php 
 						include("modules/admin.php");
-							echo Content();
+							echo Admin();
 						 ?>
 					</div>
 				</div>
@@ -72,5 +72,3 @@
 </footer>
 <?php echo imports(); ?>
 </body>
-
-</html>
