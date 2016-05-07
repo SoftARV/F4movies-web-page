@@ -47,7 +47,7 @@
 		<div class="media">
 			<div id="movies">
 				<div class="panel">
-					<div class="row">
+					<div class="row ">
 						<div class="col-lg-3 col-lg-offset-1">
 							<?php echo '<img class="img-rounded poster" src="'.$_SESSION['link_imagen'].'" alt="Poster">'; ?>		
 						</div>
@@ -87,6 +87,7 @@
 						</div>
 					</div>
 				</div>
+				</div>
 				<div class="panel">
 					<div class="row">
 						<div class="col-lg-4 col-lg-offset-1">
@@ -100,7 +101,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			
 		</div>	
 	</div>
 	
