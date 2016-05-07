@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2016 at 05:43 PM
+-- Generation Time: May 07, 2016 at 02:45 AM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -38,10 +38,10 @@ CREATE TABLE `compra` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `desc`
+-- Table structure for table `descrip`
 --
 
-CREATE TABLE `desc` (
+CREATE TABLE `descrip` (
   `cantidad` int(11) NOT NULL,
   `ID_pelicula` int(11) NOT NULL,
   `ID_compra` int(11) NOT NULL
@@ -142,11 +142,6 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for dumped tables
 --
 
---
--- AUTO_INCREMENT for table `compra`
---
-ALTER TABLE `compra`
-  MODIFY `ID_compra` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `pelicula`
 --
