@@ -40,16 +40,11 @@
     margin-bottom: 15px;
 }
 
-.modal-body form textarea {
-    height: 100px;
-}
-
 .modal-body form .input-error {
     border-color: #B20E01;
 }
 
-input.login-input,
-{
+input.login-input {
 	height: 50px;
     margin: 0;
     padding: 0 20px;
@@ -67,8 +62,7 @@ input.login-input,
 }
 
 
-input.login-input,
-{
+input.login-input {
 	outline: 0;
 	background: #444;
     border: 3px solid #555;

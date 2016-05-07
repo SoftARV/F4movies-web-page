@@ -18,7 +18,6 @@
 	<?php 
 		echo Menu();
 	?>
-
 	<div class="container">	
 	<br>
 		<div class="row">		
@@ -44,55 +43,55 @@
 						<h3 class="panel-title">Agregar una pelicula</h3>
 					</div>
 					<div class="panel-body">
-						<form class="form-horizontal">
+						<form action="modules/addmovie.php" enctype="multipart/form-data" method="post"  class="form-horizontal">
 						  <div class="form-group">
 						    <label for="inputMovieN" class="col-md-2 control-label">Nombre</label>
 						    <div class="col-md-4">
-						      <input required type="text" class="form-control" id="inputMovieN" placeholder="Nombre">
+						      <input required type="text" class="form-control" name="nombre" placeholder="Nombre">
 						    </div>
 						    <label for="movieFilter" class="col-md-2 control-label">Categoria</label>
 						    <div class="col-md-4">
-						      <input required type="text" class="form-control" id="movieFilter" placeholder="Categoria">
+						      <input required type="text" class="form-control" name="categoria" placeholder="Categoria">
 						    </div>
 						  </div>
 						  <div class="form-group">
 						    <label for="movieGender" class="col-md-2 control-label">Genero</label>
 						    <div class="col-md-4">
-						      <input required type="text" class="form-control" id="movieGender" placeholder="Genero">
+						      <input required type="text" class="form-control" name="genero" placeholder="Genero">
 						    </div>
 						    <label for="bloc" class="col-md-2 control-label">Censura</label>
 						    <div class="col-md-4">
-						      <input required type="text" class="form-control" id="bloc" placeholder="Censura">
+						      <input required type="text" class="form-control" name="censura" placeholder="Censura">
 						    </div>
 						  </div>
 						  <div class="form-group">
 						    <label for="movieTimer" class="col-md-2 control-label">Duracion</label>
 						    <div class="col-md-4">
-						      <input required type="text" class="form-control" id="movieTimer" placeholder="00:00">
+						      <input required type="text" class="form-control" name="duracion" placeholder="00:00">
 						    </div>
 						    <label for="Descripcion" class="col-md-2 control-label">Descripcion</label>
 						    <div class="col-md-4">
-						      <input required type="text" class="form-control" id="Descripcion" placeholder="Descripcion">
+						      <input required type="text" class="form-control" name="descripcion" placeholder="Descripcion">
 						    </div>
 						  </div>
 						  <div class="form-group">
 						    <label for="urlVideo" class="col-md-2 control-label">Direccion del trailer</label>
 						    <div class="col-md-4">
-						      <input required type="url" class="form-control" id="urlVideo" placeholder="URL">
+						      <input required type="url" class="form-control" name="linkvideo" placeholder="URL">
 						    </div>
-						    <label for="urlPoster" class="col-md-2 control-label">Direccion poster</label>
+						    <label for="urlPoster" class="col-md-2 control-label">Poster</label>
 						    <div class="col-md-4">
-						      <input required type="url" class="form-control" id="urlPoster" placeholder="URL">
+						      <input required type="file" class="form-control" accept="image/jpeg" name="poster" placeholder="URL">
 						    </div>
 						  </div>
 						  <div class="form-group">
 						    <label for="urlSite" class="col-md-2 control-label">Direccion del sitio</label>
 						    <div class="col-md-4">
-						      <input required type="url" class="form-control" id="urlSite" placeholder="URL">
+						      <input required type="url" class="form-control" name="linksitio" placeholder="URL">
 						    </div>
 						    <label for="Director" class="col-md-2 control-label">Director</label>
 						    <div class="col-md-4">
-						      <input required type="url" class="form-control" id="Director" placeholder="Director">
+						      <input required type="text" class="form-control" name="director" placeholder="Director">
 						    </div>
 						  </div>
 						  <div class="form-group">
@@ -102,7 +101,7 @@
 						    <label class="sr-only" for="input"></label>
 						    <div class="input-group">
 						      <div class="input-group-addon">$</div>
-						      <input required type="number" class="form-control" id="input" placeholder="">
+						      <input required type="number" class="form-control" id="input" name="precio" placeholder="">
 						      <div class="input-group-addon">.00</div>
 						    </div>
 						  	</div>

@@ -51,24 +51,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="carousel">
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
-						<div class="movie-carousel"><img class="movie-carousel-poster" src="images/deadpool_poster.jpg" alt=""></div>
+						<?php fillCarousel(); ?>
 					</div>
 				</div>
 			</div>

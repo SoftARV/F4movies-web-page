@@ -116,7 +116,7 @@ function Menu(){
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-cedula">Cedula</label>
-	                    			<input type="number" name="form-cedula" placeholder="Cedula..." class="form-cedula login-input form-control" id="form-cedula"  required>
+	                    			<input type="number" name="form-cedula" placeholder="Cedula..." class="form-cedula login-input form-control" required>
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-6">
@@ -279,7 +279,7 @@ function Menu(){
 
 function Footer(){
 	return '<div class="container">
-			<div class="col-md-1 col-lg-2"><a href="#">Vuelta al Inicio</a><p class></p></div>
+			<div class="col-md-1 col-lg-2"><a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a><p class></p></div>
 			<div class="col-md-3 col-lg-2">Desarrollado por </div>
 			<div class="col-md-3 col-lg-4">Todos los derechos reservados '.date('Y').' &copy;</div>
 			<div class="col-md-4 col-lg-4">Redes sociales 
@@ -349,6 +349,30 @@ function registro(){
 	}
 	
 }
+
+	function fillCarousel() {
+		$server   = "localhost";
+		$username = "root";
+		$password = "";
+		$database = "venta";
+
+
+		$conn = new mysqli($server, $username, $password,$database);
+		
+		$listadoPeliculas = '';
+
+		$listadoPeliculas = 'SELECT ID_pelicula,link_imagen FROM pelicula limit 12';
+		
+		$result = $conn->query($listadoPeliculas);
+		 while($row = $result->fetch_assoc()) 
+    	{	
+    		echo '	<div class="movie-carousel">
+    					<a href=descripcion.php?pelicula="'.$row['ID_pelicula'].'">
+    						<img class="movie-carousel-poster" src="'.$row['link_imagen'].'" alt="poster">
+    					</a>
+    				</div>';
+    	}
+	}
 
 function contacto(){
 	if (isset($_GET["conFailed"]))
