@@ -17,8 +17,9 @@
 		echo Menu();
 		pelicula($id_pelicula);
 	?>
+	<div class="container">
 	<div class="row search-bar">
-		<div class="col-lg-9 col-lg-offset-2">
+		<div class="col-lg-8 col-lg-offset-2">
 			<div class="input-group">
 				<div class="input-group-btn">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buscar<span class="caret"></span></button>
@@ -42,6 +43,7 @@
 				</div>
 			</div><!-- /input-group -->
 		</div><!-- /.col-lg-6 -->		
+	</div>
 	</div>
 	<div class="container">
 		<div class="media">
