@@ -101,15 +101,14 @@ function Menu(){
 	                <form role="form" action="modules/login.php" method="post" class="login-form">
 	                   	<div class="form-group">
 	                    	<label class="sr-only" for="form-email">Correo</label>
-	                    	<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" ng-model="form-correo" required>
+	                    	<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" id="form-correo" required>
 	                    </div>
 	                    <div class="form-group">
 	                        <label class="sr-only" for="form-password">Password</label>
-	                        <input type="password" name="form-password" placeholder="Contraseña..." class="form-password login-input form-control" ng-model="form-password" required>
+	                        <input type="password" name="form-password" placeholder="Contraseña..." class="form-password login-input form-control" id="form-password" required>
 	                    </div>
 	                    <button type="submit" class="btn login">Iniciar Sesion</button>
 	                    
-
 	                </form>
 
 	                <form role="form" action="modules/registro.php" method="post" class="register-form hidden-item">
@@ -117,61 +116,61 @@ function Menu(){
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-cedula">Cedula</label>
-	                    			<input type="number" name="form-cedula" placeholder="Cedula..." class="form-cedula login-input form-control" id="form-cedula" ng-model="form-cedula" required>
+	                    			<input type="number" name="form-cedula" placeholder="Cedula..." class="form-cedula login-input form-control" id="form-cedula"  required>
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-6">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-name">Nombre</label>
-	                    			<input type="text" name="form-name" placeholder="Nombre..." class="form-name login-input form-control" id="form-name" ng-model="form-name" required>
+	                    			<input type="text" name="form-name" placeholder="Nombre..." class="form-name login-input form-control" id="form-name" required>
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-6">
 	                    		<div class="form-group">
 	                    			<label class="sr-only" for="form-lastname">Apellido</label>
-	                    			<input type="text" name="form-lastname" placeholder="Apellido..." class="form-lastname login-input form-control" id="form-lastname" ng-model="form-lastname" required>
+	                    			<input type="text" name="form-lastname" placeholder="Apellido..." class="form-lastname login-input form-control" id="form-lastname" required>
 	                    		</div>
 	                   		</div>
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-dir1">Direccion Primaria</label>
-	                    			<input type="text" name="form-dir1" placeholder="Direccion Primaria..." class="form-dir1 login-input form-control" id="form-dir1" ng-model="form-dir1"required>
+	                    			<input type="text" name="form-dir1" placeholder="Direccion Primaria..." class="form-dir1 login-input form-control" id="form-dir1" required>
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-dir2">Direccion Secundaria...</label>
-	                    			<input type="text" name="form-dir2" placeholder="Direccion Secundaria..." class="form-dir2 login-input form-control" id="form-dir2" ng-model="form-dir2" required>
+	                    			<input type="text" name="form-dir2" placeholder="Direccion Secundaria..." class="form-dir2 login-input form-control" id="form-dir2" required>
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-telefono">Telefono</label>
-	                    			<input type="number" name="form-telefono" placeholder="Numero de Telefono..." class="form-telefono login-input form-control" id="form-telefono" ng-model="form-telefono" required>
+	                    			<input type="number" name="form-telefono" placeholder="Numero de Telefono..." class="form-telefono login-input form-control" id="form-telefono" required>
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-12">
 	                   			<div class="form-group">
 	                    			<label class="sr-only" for="form-correo">Correo</label>
-	                    			<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" id="form-correo" ng-model="form-correo" required>
+	                    			<input type="email" name="form-correo" placeholder="Correo..." class="form-correo login-input form-control" id="form-correo"  required>
 	                    		</div>
 	                    	</div>
 	                   		<div class="col-sm-12">
 	                    		<div class="form-group">
 	                    			<label class="sr-only" for="form-username">Usuario</label>
-	                    			<input type="text" name="form-username" placeholder="Usuario..." class="form-username login-input form-control" id="form-username" ng-model="form-username" required>
+	                    			<input type="text" name="form-username" placeholder="Usuario..." class="form-username login-input form-control" id="form-username"  required>
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-6">
 	                    		<div class="form-group">
 	                        		<label class="sr-only" for="form-password">Contraseña</label>
-	                        		<input type="password" name="form-password" placeholder="Contraseña..." class="form-password login-input form-control" id="form-password" ng-model="form-password" required>
+	                        		<input type="password" name="form-password" placeholder="Contraseña..." class="form-password login-input form-control" id="form-password" required>
 	                    		</div>
 	                    	</div>
 	                    	<div class="col-sm-6">
 	                    		<div class="form-group">
 	                    			<label class="sr-only" for="form-repassword">Repetir Contraseña</label>
-	                        		<input type="password" name="form-repassword" placeholder="Repetir Contraseña..." class="form-repassword login-input form-control" id="form-repassword" ng-model="form-repassword" required>
+	                        		<input type="password" name="form-repassword" placeholder="Repetir Contraseña..." class="form-repassword login-input form-control" id="form-repassword" required>
 	                        	</div>
 	                        </div>
 	                    	
@@ -297,7 +296,9 @@ function imports() {
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
     <script type="text/javascript" src="js/login_scripts.js"></script>
-    <script type="text/javascript" src="js/livecar.js"></script>';
+    <script type="text/javascript" src="js/livecar.js"></script>
+    <script type="text/javascript" src="js/validaciones.js"></script>
+    ';
    
 }
 
@@ -349,20 +350,31 @@ function registro(){
 	
 }
 
-	
-function conexion(){	
-	$server = "localhost";
-	$username = "root";
-	$password = "";
-	$database= "venta";
-
-	$conn = new mysqli($server, $username, $password,$database);
-
-	if ($conn->connect_error) 
+function contacto(){
+	if (isset($_GET["conFailed"]))
+	{
+		if ($_GET["conFailed"]==='false') 
 		{
-    		die("Falla: " . $conn->connect_error);
+		echo'
+		<div class="alert alert-success">
+  		<a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  		<strong>Exito</strong> Enviado !
+		</div>';
 		}
+		else
+		{
+		echo'
+		<div class="alert alert-warning">
+  		<a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  		<strong>EXITO</strong> Registro Exitoso.
+		</div>';
+		}
+
+	}
+	
 }
+
+
 
 
 ?>

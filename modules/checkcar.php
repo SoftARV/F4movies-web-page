@@ -2,6 +2,9 @@
 
 session_start();
 
+if (isset($_SESSION["id"]))
+{
+
 $server = "localhost";
 $username = "root";
 $password = "";
@@ -39,7 +42,19 @@ for ($i=1; $i<10 ; $i++)
 			}
 	}
 
-	echo "";
+	echo '
+		<div class="alert alert-success">
+  		<a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  		<strong>Error</strong> Compra Exitosa !
+		</div>';
 
+	}
+
+	echo'
+		<div class="alert alert-warning">
+  		<a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  		<strong>Error</strong> Inicie sesion para finalizar compra!
+		</div>';
+	
 
   ?>
